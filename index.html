@@ -44,7 +44,7 @@
 
             $(document).mousemove(function(e){
                 
-                var num = parseInt(e.clientY.map(0, $(window).height(), 0, 200)); // 0
+                var num = parseInt(e.clientY.map($(window).height(), 0, 0, 200)); // 0
                 $("h1").css({
                     "font-variation-settings": "'bloo' "+num
                 })
