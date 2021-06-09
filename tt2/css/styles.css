@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Suisse Mono';
+    src: url("../fonts/sm.otf") format("opentype");
+}
+
+a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.tt {cursor:pointer}
+body {
+    background:#000;
+    color:#FFF;
+    font-family:'Suisse Mono', monospace;
+    margin:0;
+}
+
+#menu {
+    position:fixed;
+    max-width:20%;
+}
+
+.menu {
+    cursor:pointer;
+    transition:text-indent 0.1s
+}
+
+.menu:hover,
+.menu.active {
+    text-indent:1em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+
+#content {
+    grid-column-start:2;
+    grid-column-end:6;
+    
+
+}
+
+.eventPic {
+    display:inline-block;
+}
+
+
+.section {
+/*
+    background:#FFF;
+    color:#000;
+*/
+    margin-top:5px;
+    min-height:100vh;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;   
+    transition:background 0.2s;
+    box-sizing:border-box;
+    padding:1em
+}
+
+
+.section:hover {
+    background:black
+}
+
+#blank:hover {
+    background:none;
+}
+
+.big-3 {
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
+.big-5 {
+    grid-column-start:1;
+    grid-column-end:6;
+}
+
+li {
+    margin:0 0 1em 0;
+    list-style-type: none
+    
+}
+
+
+#defaultCanvas0 {
+    position:absolute;
+    top:0; left:0;
+    z-index:-9999;
+}
+
+.icon {
+    max-width:100px
+}
+
+.bio {
+    height:0;
+    overflow:hidden;
+    transition:height 0.2s;
+
+}
+
+.active .bio {
+    height:auto;
+    padding-bottom:1em;
+}
+
+.name {
+    transition:all 0.2s;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.name:hover,
+.active .name {
+    text-indent:2em;
+
+}
+
+.active .name {
+    text-decoration:underline;
+    padding-top:1em;
+}
