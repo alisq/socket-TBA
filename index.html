@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            @font-face {
+                font-family: 'calibroom';
+                src: url('MushroomTestGX.woff2') format('woff2');
+            }
+
+           h1 {
+                font-family:'calibroom';
+                margin:0;
+                padding:0;
+                line-height:400px;
+                font-size:400px;
+                font-weight:normal;
+                font-variation-settings: 'bloo' 200;
+                position:fixed;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>
+            rtf
+          </h1>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+
+            $(document).mousemove(function(e){
+                
+                var num = parseInt(e.clientX.map(0, $(window).width(), 0, 200)); // 0
+                $("h1").css({
+                    "font-variation-settings": "'bloo' "+num
+                })
+            })
+
+
+
+Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+  return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+        </script>
+    </body>
+</html>
