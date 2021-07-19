@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'calibre';
+    src: url('/fonts/Calibre-Regular.otf') format("opentype");  
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'calibre';
+    src: url('fonts/Calibre-Semibold.otf') format("opentype");  
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'burgess';
+    src: url('fonts/burgess-regular-pro.otf') format("opentype");  
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'burgess';
+    src: url('fonts/burgess-italic-pro.otf') format("opentype");  
+    font-weight: normal;
+    font-style: italic;
+}
+
+.body {
+    font-family: calibre;
+    font-size:2rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight:normal
+}
+h2 {
+    font-size:4rem;
+}
+h3 {
+    font-size:1.5rem;
+    font-weight:bold;
+}
