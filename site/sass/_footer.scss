@@ -1,0 +1,19 @@
+.footer {
+    width:100%;    
+    position:fixed;
+    bottom:0;
+   display:grid;
+   grid-template-columns: 1fr 2fr;
+   padding:3rem 1rem;
+
+    &__menu {
+        list-style-type: none;
+        text-align:right;
+
+        & li { 
+            display:inline-block;
+            margin-left:2rem;
+        }
+    }
+}
+

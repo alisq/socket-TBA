@@ -6,7 +6,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  min-height: 100vh; }
 
 @font-face {
   font-family: 'calibre';
@@ -40,7 +41,7 @@ h1, h2, h3, h4 {
   font-weight: normal; }
 
 h2 {
-  font-size: 4rem; }
+  font-size: 5rem; }
 
 h3 {
   font-size: 1.5rem;
@@ -60,6 +61,20 @@ h3 {
     text-align: right;
     list-style-type: none; }
     .header__menu li {
+      display: inline-block;
+      margin-left: 2rem; }
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 3rem 1rem; }
+  .footer__menu {
+    list-style-type: none;
+    text-align: right; }
+    .footer__menu li {
       display: inline-block;
       margin-left: 2rem; }
 
