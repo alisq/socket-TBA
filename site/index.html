@@ -11,28 +11,47 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
+        <title>TBA | Title TK</title>
     </head>
     <body class="body">
         <header class="header">
             <h3 class="header__tba">Toronto Biennial of Art</h3>
             <h2 class="header__publication-title">Publication Title</h2>
             <ul class="header__menu">
-                <li class="header__menu--part">Pt. I</li>
-                <li class="header__menu--part">Pt. II</li>
-                <li class="header__menu--part">Pt. III</li>
+                <li class="header__menu--part"><a href="#">Pt. I</a></li>
+                <li class="header__menu--part"><a href="#">Pt. II</a></li>
+                <li class="header__menu--part"><a href="#">Pt. III</a></li>
             </ul>
         </header>
+
+        <section class="section__main">
+            <ul class="section__main--list random">
+                <text-item
+                v-for="(post,index) in posts"
+                v-bind:key="post.nid"
+                v-bind:title="post.title"
+                v-bind:authors="post.authors"
+                v-bind:nid="index"
+              ></text-item>
+            </ul>
+        </section>
+
 
         <footer class="footer">
             <h3>2019 Toronto Biennial of Art<br />
             Complete Programs List</h3>
             <ul class="footer__menu">
-                <li>Introduction</li>
-                <li>Bibliography</li>
-                <li>Acknowledgements</li>
-                <li>Colophon</li>
+                <li><a id="toggle-view" href="#"><strong>list view</strong></a></li>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Bibliography</a></li>
+                <li><a href="#">Acknowledgements</a></li>
+                <li><a href="#">Colophon</a></li>
             </ul>
 
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

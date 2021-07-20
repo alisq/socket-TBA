@@ -1,16 +1,15 @@
 
 // [block]__[element]--[modifier]
 //BASE
+@import "variables";
 @import "base";
 @import "typography";
+
 
 //LAYOUT
 @import "header";
 @import "footer";
-
-$yellow: #f8d84c;
-$black: #000;
-$white: #FFF;
+@import "layout";
 
 
 

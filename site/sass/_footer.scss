@@ -5,6 +5,8 @@
    display:grid;
    grid-template-columns: 1fr 2fr;
    padding:3rem 1rem;
+   background:$black;
+   z-index:10;
 
     &__menu {
         list-style-type: none;

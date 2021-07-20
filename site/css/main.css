@@ -37,6 +37,17 @@ html {
   font-family: calibre;
   font-size: 2rem; }
 
+a {
+  text-decoration: none; }
+
+a:link,
+a:visited {
+  color: #FFF; }
+
+a:hover,
+a:active {
+  color: #f8d84c; }
+
 h1, h2, h3, h4 {
   font-weight: normal; }
 
@@ -50,9 +61,12 @@ h3 {
 .header {
   width: 100%;
   position: fixed;
+  top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1rem; }
+  padding: 1rem;
+  background: #000;
+  z-index: 10; }
   .header__tba {
     text-align: left; }
   .header__publication-title {
@@ -70,13 +84,50 @@ h3 {
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 3rem 1rem; }
+  padding: 3rem 1rem;
+  background: #000;
+  z-index: 10; }
   .footer__menu {
     list-style-type: none;
     text-align: right; }
     .footer__menu li {
       display: inline-block;
       margin-left: 2rem; }
+
+.section__main {
+  max-width: 100rem;
+  margin: 10rem auto;
+  font-size: 3rem; }
+  .section__main--list.random {
+    list-style-type: none; }
+    .section__main--list.random li {
+      position: fixed;
+      width: 30rem;
+      font-size: 0.66666em;
+      cursor: pointer; }
+      .section__main--list.random li:hover {
+        color: #f8d84c; }
+
+.popout {
+  position: absolute;
+  top: 60px;
+  background: #f8d84c;
+  z-index: 5;
+  width: 100%;
+  min-height: 100vh;
+  color: #000; }
+  .popout__close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 10rem;
+    font-weight: 100;
+    cursor: pointer; }
+    .popout__close:hover {
+      color: #FFF; }
+  .popout__interior {
+    max-width: 120rem;
+    margin: 3rem auto; }
 
 .body {
   background: #000;

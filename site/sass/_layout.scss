@@ -1,0 +1,53 @@
+.section__main {
+    max-width:100rem;
+
+    margin:10rem auto;
+    font-size:3rem;
+
+    &--list.random {
+
+        list-style-type:none;
+
+        & li {
+            position:fixed;
+            width:30rem;
+            font-size:0.66666em;
+            cursor:pointer;
+
+            &:hover {
+                color:$yellow;
+            }
+        }
+
+    }
+
+    
+}
+
+.popout {
+    position:absolute;
+    top:60px;
+    background:$yellow;
+    z-index:5;
+    width:100%;
+    min-height:100vh;
+    color:$black;
+
+    &__close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 10rem;
+        font-weight: 100;
+        cursor:pointer;
+
+        &:hover {
+            color:$white;
+        }
+    }
+
+    &__interior {
+        max-width:120rem;
+        margin:3rem auto;
+    }
+}
