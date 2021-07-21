@@ -10,8 +10,8 @@ html {
   min-height: 100vh; }
 
 @font-face {
-  font-family: 'calibe';
-  src: url("/fonts/Roboto-Regular_enoki-VF.ttf") format("truetype");
+  font-family: 'calibre123';
+  src: url("fonts/Roboto-Regular_enoki-VF.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal; }
@@ -27,9 +27,8 @@ html {
     font-variation-settings: 'bloo' 0; } }
 
 .body {
-  font-family: calibre;
-  font-size: 2rem;
-  animation: breathe 500ms infinite both; }
+  font-family: calibre123;
+  font-size: 2rem; }
 
 a {
   text-decoration: none; }
@@ -44,7 +43,7 @@ a:active {
 
 h1, h2, h3, h4 {
   font-weight: normal;
-  animation: breathe 500ms infinite both; }
+  animation: breathe 5000ms infinite both; }
 
 h2 {
   font-size: 5rem; }

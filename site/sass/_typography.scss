@@ -1,6 +1,6 @@
 // @font-face {
-//     font-family: 'calibre';
-//     src: url('/fonts/Calibre-Regular.otf') format("opentype");  
+//     font-family: 'calibre123';
+//     src: url('/fonts/Calibre123-Regular.otf') format("opentype");  
 //     font-weight: normal;
 //     font-style: normal;
 
@@ -8,8 +8,8 @@
 
 
 // @font-face {
-//     font-family: 'calibre';
-//     src: url('fonts/Calibre-Semibold.otf') format("opentype");  
+//     font-family: 'calibre123';
+//     src: url('fonts/Calibre123-Semibold.otf') format("opentype");  
 //     font-weight: bold;
 //     font-style: normal;
 
@@ -29,8 +29,8 @@
 // }
 
 @font-face {
-    font-family:'calibe';
-    src: url('/fonts/Roboto-Regular_enoki-VF.ttf') format('truetype');
+    font-family:'calibre123';
+    src: url('fonts/Roboto-Regular_enoki-VF.ttf') format('truetype');
     font-weight:  400;
     font-style:   normal;
     font-stretch: normal;
@@ -62,9 +62,9 @@
   
 
 .body {
-    font-family: calibre;
+    font-family: calibre123;
     font-size:2rem;
-    animation: breathe 500ms infinite both;
+ 
 }
 a {
     text-decoration:none;
@@ -83,7 +83,7 @@ a:active {
 
 h1, h2, h3, h4 {
     font-weight:normal;
-    animation: breathe 500ms infinite both;
+    animation: breathe 5000ms infinite both;
 }
 h2 {
     font-size:5rem;
