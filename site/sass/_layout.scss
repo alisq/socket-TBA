@@ -1,3 +1,10 @@
+#defaultCanvas0 {
+    position:fixed;
+    z-index:8;
+    pointer-events:none;
+    top:0px;
+}
+
 .section__main {
     max-width:100rem;
 
@@ -33,7 +40,7 @@
     min-height:100vh;
     color:$black;
 
-    &__close {
+    &__menu {
         position: absolute;
         right: 1rem;
         top: 1rem;
@@ -41,8 +48,16 @@
         font-weight: 100;
         cursor:pointer;
 
-        &:hover {
-            color:$white;
+        
+
+        & div {
+            display:inline-block;
+
+            &:hover {
+                color:$white;
+    
+                
+            }
         }
     }
 

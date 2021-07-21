@@ -10,32 +10,26 @@ html {
   min-height: 100vh; }
 
 @font-face {
-  font-family: 'calibre';
-  src: url("/fonts/Calibre-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'calibe';
+  src: url("/fonts/Roboto-Regular_enoki-VF.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
 
-@font-face {
-  font-family: 'calibre';
-  src: url("fonts/Calibre-Semibold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'burgess';
-  src: url("fonts/burgess-regular-pro.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'burgess';
-  src: url("fonts/burgess-italic-pro.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic; }
+@keyframes breathe {
+  0% {
+    font-variation-settings: 'bloo' 0; }
+  60% {
+    font-variation-settings: 'bloo' 0; }
+  80% {
+    font-variation-settings: 'bloo' 200; }
+  100% {
+    font-variation-settings: 'bloo' 0; } }
 
 .body {
   font-family: calibre;
-  font-size: 2rem; }
+  font-size: 2rem;
+  animation: breathe 500ms infinite both; }
 
 a {
   text-decoration: none; }
@@ -49,7 +43,8 @@ a:active {
   color: #f8d84c; }
 
 h1, h2, h3, h4 {
-  font-weight: normal; }
+  font-weight: normal;
+  animation: breathe 500ms infinite both; }
 
 h2 {
   font-size: 5rem; }
@@ -94,6 +89,12 @@ h3 {
       display: inline-block;
       margin-left: 2rem; }
 
+#defaultCanvas0 {
+  position: fixed;
+  z-index: 8;
+  pointer-events: none;
+  top: 0px; }
+
 .section__main {
   max-width: 100rem;
   margin: 10rem auto;
@@ -116,15 +117,17 @@ h3 {
   width: 100%;
   min-height: 100vh;
   color: #000; }
-  .popout__close {
+  .popout__menu {
     position: absolute;
     right: 1rem;
     top: 1rem;
     font-size: 10rem;
     font-weight: 100;
     cursor: pointer; }
-    .popout__close:hover {
-      color: #FFF; }
+    .popout__menu div {
+      display: inline-block; }
+      .popout__menu div:hover {
+        color: #FFF; }
   .popout__interior {
     max-width: 120rem;
     margin: 3rem auto; }
