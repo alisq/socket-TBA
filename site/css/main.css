@@ -9,12 +9,29 @@ html {
   font-size: 62.5%;
   min-height: 100vh; }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
 @font-face {
   font-family: 'calibre123';
   src: url("fonts/Roboto-Regular_enoki-VF.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal; }
+
+@font-face {
+  font-family: 'burgess';
+  src: url("fonts/burgess-regular-pro.otf") format("otf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'burgess';
+  src: url("fonts/burgess-italic-pro.otf") format("otf");
+  font-weight: 400;
+  font-style: italic; }
 
 @keyframes breathe {
   0% {
@@ -28,7 +45,8 @@ html {
 
 .body {
   font-family: calibre123;
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.2em; }
 
 a {
   text-decoration: none; }
@@ -41,16 +59,53 @@ a:hover,
 a:active {
   color: #f8d84c; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: normal;
-  animation: breathe 5000ms infinite both; }
+  animation: breathe 10000ms infinite both; }
 
 h2 {
-  font-size: 5rem; }
+  font-size: 5rem;
+  line-height: 1em; }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: bold; }
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.02; }
+
+h5 {
+  font-size: 40vw;
+  text-align: center;
+  margin: 0;
+  line-height: 1em; }
+
+h1, h2, h3, h4, p {
+  margin-bottom: 1.5rem; }
+
+.popout__interior--right {
+  font-size: 1.5rem; }
+
+.pull-data {
+  cursor: pointer; }
+
+.popout ul {
+  list-style-type: none; }
+  .popout ul li {
+    text-indent: -3em; }
+
+.footnotes {
+  font-size: 1.5rem; }
+
+.popout a:link {
+  color: #000;
+  text-decoration: underline; }
+
+.popout a:hover {
+  text-decoration: none; }
+
+.editorial {
+  padding-left: 2em;
+  font-size: 1.25em;
+  font-family: 'burgess'; }
 
 .header {
   width: 100%;
@@ -101,7 +156,6 @@ h3 {
   .section__main--list.random {
     list-style-type: none; }
     .section__main--list.random li {
-      position: fixed;
       width: 30rem;
       font-size: 0.66666em;
       cursor: pointer; }
@@ -129,7 +183,11 @@ h3 {
         color: #FFF; }
   .popout__interior {
     max-width: 120rem;
-    margin: 3rem auto; }
+    margin: 3rem auto 12rem; }
+    .popout__interior--grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-column-gap: 1em; }
 
 .body {
   background: #000;

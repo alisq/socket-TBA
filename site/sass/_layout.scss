@@ -16,7 +16,7 @@
         list-style-type:none;
 
         & li {
-            position:fixed;
+            //position:fixed;
             width:30rem;
             font-size:0.66666em;
             cursor:pointer;
@@ -24,6 +24,8 @@
             &:hover {
                 color:$yellow;
             }
+
+            
         }
 
     }
@@ -63,6 +65,14 @@
 
     &__interior {
         max-width:120rem;
-        margin:3rem auto;
+        margin:3rem auto 12rem;
+        
+        
+
+        &--grid {
+            display:grid;
+            grid-template-columns:3fr 2fr;
+            grid-column-gap:1em;
+        }
     }
 }

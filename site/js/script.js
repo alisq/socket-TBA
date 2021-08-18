@@ -1,3 +1,12 @@
+url = 'https://tba.codepanel.in/json/articles';
+  fetch(url)
+.then(response => response.json())
+  .then(p => {
+console.log(p)
+
+
+
+
 articles = [{nid: 1, authors: "Haruko Okano with Ayumi Goto, Cheryl Trudeau, Elwood Jimmy, and Peter Morin",
 title: "edited transcript from Six Chairs in a Circle (2019)"},
 {nid: 2, authors: "Diane Borsato",
@@ -12,19 +21,28 @@ points = [];
 
 
 
-Vue.component('text-item', {
-    props: ['title', 'authors', 'nid'],
-    template: '<li v-bind:data-nid="nid">{{authors}}<br />{{ title }}</li>'
-  })
+// Vue.component('text-item', {
+//     props: ['title', 'field_artist_s_', 'nid'],
+//     template: '<li v-bind:data-nid="nid">{{field_artist_s_}}<br />{{ title }}</li>'
+//   })
 
-  // Define a new component called button-counter
-  const app = new Vue({
-    el: '.section__main--list',
-    data: {
-      posts: articles
-    },
+//   // Define a new component called button-counter
+//   const app = new Vue({
+//     el: '.section__main--list',
+//     data: {
+//       posts: p
+//     },
     
-  })
+//   })
+
+
+for(i=0;i<p.length;i++) {
+  let item = `
+  <li data-item='${i}' data-nid="${p[i].nid}">${p[i].field_artist_s_}<br />${p[i].title}</li>
+  `
+  $(".section__main--list").append(item)
+
+}
 
   $(".section__main--list li").each(function(){
 
@@ -63,18 +81,24 @@ Vue.component('text-item', {
             "left":fromLeft
 
         }).click(function(){
-            loadText($(this).data("nid"));
+            loadText($(this).data("item"));
         });
 
 
   })
 
+    $(".pull-data").click(function(){
+      
+      loadPage($(this).data("nid"))
+    })
 
-  function loadText(nid) {
-      console.log(nid)
+  function loadText(item) {
+
+
+      
       $(".popout").remove();
       /* html */
-      content = articles[nid];
+      content = p[item];
       
     let popout = `
     <div class='popout'>
@@ -84,8 +108,19 @@ Vue.component('text-item', {
         </div>
         
         <div class="popout__interior">
-            <h2>${content.authors}<br />
-            ${content.title}</h2>
+        <h2>${content.field_artist_s_}<br />
+              ${content.title}</h2>
+
+              <div class="popout__interior--grid">    
+          <div class="popout__interior--grid-left">
+          <div class="editorial">${content.field_editorial}</div>
+              <br /><br />
+              ${content.field_article_contents.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files")}
+            </div>
+            <div class="popout__interior--grid-right">
+            ${content.body}
+          </div>
+          </div>
         </div>
     </div>
     `
@@ -93,6 +128,45 @@ Vue.component('text-item', {
     $(popout)
     .appendTo("body")
   }
+
+
+
+  function loadPage(node) {
+    url = 'https://tba.codepanel.in/json/page/'+node;
+    fetch(url)
+  .then(response => response.json())
+    .then(j => {
+  console.log(j)
+  
+
+      
+    $(".popout").remove();
+    /* html */
+    
+    
+  let popout = `
+  <div class='popout'>
+      <div class="popout__menu">
+          <div class="popout__pub">M</div>
+          <div class="popout__close">&times;</div>
+      </div>
+      
+      <div class="popout__interior">
+        <div class="popout__interior--left">
+            <h2>${j[0].title}</h2>
+            <br /><br />
+            ${j[0].body.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files")}
+          </div>
+          
+      </div>
+  </div>
+  `
+  
+  $(popout)
+  .appendTo("body")
+})
+}
+
 
   $(document).on("click","#toggle-view",function(){
     $(".section__main--list").toggleClass("random");
@@ -109,7 +183,7 @@ Vue.component('text-item', {
     $(".popout").remove();
   })
 
-
+})
   /*
 RANDOM GROWTH
 Jeff Thompson | 2019/20 | jeffreythompson.org
