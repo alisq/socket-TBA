@@ -92,10 +92,9 @@ h1, h2, h3, h4, p {
   .popout ul li {
     text-indent: -3em; }
 
-.footnotes {
-  font-size: 1.5rem; }
-
-.popout a:link {
+.popout a:link,
+.popout a:active,
+.popout a:visited {
   color: #000;
   text-decoration: underline; }
 
@@ -106,6 +105,31 @@ h1, h2, h3, h4, p {
   padding-left: 2em;
   font-size: 1.25em;
   font-family: 'burgess'; }
+
+.see-footnote {
+  vertical-align: super;
+  text-decoration: none;
+  font-size: 0.66em;
+  font-weight: bold; }
+
+.footnote {
+  font-family: Burgess;
+  border-top: 1px solid #000;
+  padding-top: 1em;
+  margin-top: 1em; }
+
+.footnote-label {
+  display: inline-block;
+  padding-left: 3em; }
+
+.caption {
+  font-style: italic;
+  width: 75%;
+  margin-left: 25%;
+  line-height: 1.2em;
+  text-align: right;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 .header {
   width: 100%;
@@ -188,6 +212,8 @@ h1, h2, h3, h4, p {
       display: grid;
       grid-template-columns: 3fr 2fr;
       grid-column-gap: 1em; }
+      .popout__interior--grid-right {
+        font-size: 0.8em; }
 
 .body {
   background: #000;

@@ -137,16 +137,15 @@ h1, h2, h3, h4, p {
   }
 }
 
-.footnotes {
-  font-size:1.5rem;
 
-}
-
-.popout a:link {
+.popout a:link,
+.popout a:active, 
+.popout a:visited {
   color:#000;
   text-decoration:underline;
 }
-.popout a:hover {
+.popout a:hover,
+ {
   
   text-decoration:none;
 }
@@ -155,4 +154,35 @@ h1, h2, h3, h4, p {
   padding-left:2em;
   font-size:1.25em;
   font-family: 'burgess';
+}
+
+.see-footnote {
+  vertical-align: super;
+  text-decoration:none;
+  font-size:0.66em;
+  font-weight:bold;
+  
+}
+
+.footnote {
+  font-family: Burgess;
+  border-top: 1px solid #000;
+  padding-top: 1em;
+  margin-top: 1em;
+
+}
+
+.footnote-label {
+  display:inline-block;
+  padding-left:3em;
+}
+
+.caption {
+  font-style:italic;
+  width:75%;
+  margin-left:25%;
+  line-height:1.2em;
+  text-align:right;
+  font-size:1.5rem;
+  margin-bottom:1.5rem;
 }

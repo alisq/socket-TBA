@@ -108,12 +108,13 @@ for(i=0;i<p.length;i++) {
         </div>
         
         <div class="popout__interior">
-        <h2>${content.field_artist_s_}<br />
-              ${content.title}</h2>
-
+        
               <div class="popout__interior--grid">    
           <div class="popout__interior--grid-left">
           <div class="editorial">${content.field_editorial}</div>
+          <h2>${content.field_artist_s_}<br />
+              ${content.title}</h2>
+
               <br /><br />
               ${content.field_article_contents.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files")}
             </div>

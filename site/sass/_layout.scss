@@ -73,6 +73,10 @@
             display:grid;
             grid-template-columns:3fr 2fr;
             grid-column-gap:1em;
+
+            &-right {
+                font-size:0.8em;
+            }
         }
     }
 }
