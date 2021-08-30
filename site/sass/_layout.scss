@@ -80,3 +80,30 @@
         }
     }
 }
+
+
+.section__book-menu {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:20;
+    background:rgba($black,0.75);
+    color:white;
+    display:flex;   
+    justify-content: center;
+    align-items: center;   
+    display:none;
+
+    &--interior {
+        font-size:2em;
+        line-height:1.4em;
+    }    
+}
+
+
+.section__book-content {
+    //height:50px;
+    
+}

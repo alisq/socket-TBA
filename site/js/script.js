@@ -40,100 +40,35 @@ for(i=0;i<p.length;i++) {
   `
   $(".section__main--list").append(item)
 
+  let bookMenuItem = `
+    <input type='checkbox' id='book-link-${p[i].nid}' data-nid='${p[i].nid}'> <label for='book-link-${p[i].nid}' >${p[i].field_artist_s_} — ${p[i].title}</label><br />
+  `;
+
+
+  let bookItem = `
+  ${p[i].field_artist_s_} — ${p[i].title}
+  <br /><br />
+  ${p[i].body}
+  `;
+
+
+
+  $(".section__book-menu--interior").append(bookMenuItem)
+  $(".section__book-content").append(bookItem)
+
 }
 
-  $(".section__main--list li").each(function(){
+
+$(".section__book-menu--interior").append(' <button id=make-book>Make Book</button>')
 
 
-    let r = Math.floor(Math.random()*20);
-
-    let fromTop, fromLeft;
-    
-    while(!pos.includes(r)) {
-        r = Math.floor(Math.random()*20);
-        pos.push(r)
-
-        console.log("orig: "+r)
-
-        t = (Math.floor(r/5))
-        l = (Math.floor(r%5))
-//        if (l == 0) { l = 5 }
-
-         fromTop = t*($(window).height()/5)+100;
-         fromLeft = l*($(window).width()/6)+20;
-         //console.log("top "+fromTop)
-         console.log("left "+fromLeft)
-    }
-    
-    
-    
-    //console.log(r)
 
     
 
-    // fromTop = Math.floor(Math.random()*4)*($(window).height()/5)+100;
-    // fromLeft = Math.floor(Math.random()*4)*($(window).width()/4)+20;
-    points.push({"x":fromLeft,"y":fromTop})
-    $(this).css({
-            "top":fromTop,
-            "left":fromLeft
-
-        }).click(function(){
+$(".section__main--list li").click(function(){
             loadText($(this).data("item"));
         });
 
-
-        /*
-RANDOM GROWTH
-Jeff Thompson | 2019/20 | jeffreythompson.org
-
-The simulating of natural systems is a perfect fit
-for object-oriented programming. Populations of
-animals interacting with each other, terrain of
-different types, etc. In this example, a simplified
-fungus starts in the center of the screen, randomly
-growing out. Periodically it splits in two. After 
-it reaches a certain age, the branch dies.
-
-Use 'p' key to pause/continue the growth, or any
-other key to restart the process.
-
-A more rigorous scientific simulation would involve
-tons of research into fungal growth, etc, but even
-this version, more "inspired by" natural phenomena
-than simulating it, produces exciting and varied
-visual output.
-
-For way more on this topic, see Daniel Shiffman's
-excellent online book "Nature of Code".
-
-CHALLENGES:
-+ Can you make the sketch save an image every time
-  it resets? Can you make the filenames a unique
-  timestamp so they don't overwrite every time?
-+ Can you make the tendrils change color as they
-  get older? (Hint: use the "age" variable and map())
-+ Could you add a random "bloom" that periodically
-  gets added to the tendril?
-
-*/
-
-var font;
-
-let maxAge = 200;          // tendrils older than this will
-                           // be removed – try changing!
-
-let paused = false;        // use 'p' to pause/un-pause
-
-let fungi;                 // list of objects
-
-// function preload() {
-// 	font = loadFont('../css/fonts/Calibre-Regular.otf')
-// }
-
-
-
-  })
 
   if (window.location.hash != '') {
     l = window.location.hash.replace("#","#link-");
@@ -150,8 +85,6 @@ let fungi;                 // list of objects
   function loadText(item) {
 
 
-console.log(p[item])
-    
 
     title =  p[item].title+" — "+p[item].field_artist_s_;
     $("title").text(title)
@@ -166,7 +99,7 @@ console.log(p[item])
     let popout = `
     <div class='popout'>
         <div class="popout__menu">
-            <div class="popout__pub">M</div>
+            <div class="popout__pub" data-nid="${p[item].nid}">M</div>
             <div class="popout__close">&times;</div>
         </div>
         
@@ -193,6 +126,9 @@ console.log(p[item])
     .appendTo("body")
   }
 
+
+
+  
 
 
   function loadPage(node) {
@@ -231,9 +167,20 @@ console.log(p[item])
 })
 }
 
-
 $(document).on("click",".popout__pub",function(){
-  Bindery.makeBook({ content: '#content' });
+    $(".section__book-menu").fadeIn(200)
+    //console.log()
+
+    $("#book-link-"+$(this).data('nid')).prop("checked", true);
+})
+
+
+$(document).on("click","#make-book",function(){
+
+  //$(".section__book-content").css("display","block")
+  setTimeout(function(){
+    Bindery.makeBook({ content: '.section__book-content' });
+  },1200)
 })
 
   $(document).on("click","#toggle-view",function(){

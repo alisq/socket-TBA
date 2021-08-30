@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -131,6 +132,12 @@ h1, h2, h3, h4, p {
   font-size: 1.5rem;
   margin-bottom: 1.5rem; }
 
+input[type="checkbox"] + label {
+  transition: all 0.3s; }
+
+input[type="checkbox"]:checked + label {
+  font-variation-settings: 'bloo' 200; }
+
 .header {
   width: 100%;
   position: fixed;
@@ -217,6 +224,26 @@ h1, h2, h3, h4, p {
       grid-column-gap: 1em; }
       .popout__interior--grid-right {
         font-size: 0.8em; }
+
+.section__book-menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+  .section__book-menu--interior {
+    font-size: 2em;
+    line-height: 1.4em; }
+
+.📖-root {
+  color: black; }
 
 .body {
   background: #000;
