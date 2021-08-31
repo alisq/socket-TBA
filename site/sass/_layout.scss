@@ -105,5 +105,15 @@
 
 .section__book-content {
     display:none;
-    
+
+    &.active {
+        display:block;
+    }
+
+    &--article {
+        display:none;
+        &.active {
+            display:block;
+        }
+    }
 }

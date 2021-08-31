@@ -244,6 +244,12 @@ input[type="checkbox"]:checked + label {
 
 .section__book-content {
   display: none; }
+  .section__book-content.active {
+    display: block; }
+  .section__book-content--article {
+    display: none; }
+    .section__book-content--article.active {
+      display: block; }
 
 .📖-root {
   color: black; }
