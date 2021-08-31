@@ -1,8 +1,4 @@
 
-pos = [];
-points = [];
-
-
 
 
 
@@ -10,49 +6,30 @@ url = 'https://tba.codepanel.in/json/articles';
   fetch(url)
 .then(response => response.json())
   .then(p => {
-console.log(p)
 
 
 
 
 
 
-
-
-// Vue.component('text-item', {
-//     props: ['title', 'field_artist_s_', 'nid'],
-//     template: '<li v-bind:data-nid="nid">{{field_artist_s_}}<br />{{ title }}</li>'
-//   })
-
-//   // Define a new component called button-counter
-//   const app = new Vue({
-//     el: '.section__main--list',
-//     data: {
-//       posts: p
-//     },
-    
-//   })
-
-
+//FOR EACH ARTICLE
 for(i=0;i<p.length;i++) {
-  let item = `
-  <li data-item='${i}' id='link-${p[i].nid}' data-nid='${p[i].nid}'>${p[i].field_artist_s_}<br />${p[i].title}</li>
-  `
-  $(".section__main--list").append(item)
+  
+  //CREATE INITIAL LIST ITEM
+  let item = `<li data-item='${i}' id='link-${p[i].nid}' data-nid='${p[i].nid}'>${p[i].field_artist_s_}<br />${p[i].title}</li>`
+  
 
+  //CREATE CREATE ITEM FOR BOOK MENU
   let bookMenuItem = `
     <input type='checkbox' id='book-link-${p[i].nid}' data-nid='${p[i].nid}'> <label for='book-link-${p[i].nid}' >${p[i].field_artist_s_} — ${p[i].title}</label><br />
   `;
 
-
-  let bookItem = `
-  ${p[i].field_artist_s_} — ${p[i].title}
-  <br /><br />
-  ${p[i].body}
-  `;
+  //CREATE ACTUAL BOOK TEXT (THIS NEEDS WORK)
+  let bookItem = `${p[i].field_artist_s_} — ${p[i].title}<br /><br />${p[i].body}`;
 
 
-
+  //APPEND EACH ITEM TO APPROPRIATE MENU
+  $(".section__main--list").append(item)
   $(".section__book-menu--interior").append(bookMenuItem)
   $(".section__book-content").append(bookItem)
 
@@ -177,10 +154,10 @@ $(document).on("click",".popout__pub",function(){
 
 $(document).on("click","#make-book",function(){
 
-  //$(".section__book-content").css("display","block")
+  $(".section__book-content").css("display","block")
   setTimeout(function(){
     Bindery.makeBook({ content: '.section__book-content' });
-  },1200)
+  },5000)
 })
 
   $(document).on("click","#toggle-view",function(){
