@@ -1,29 +1,45 @@
 
+let pages = [];
+  
+    url = 'https://tba.codepanel.in/json/pages/';
+    fetch(url)
+  .then(response => response.json())
+    .then(j => {
+  pages = [...j]
 
+  for (i=0;i<j.length;j++) {
+    let item = new Page(j[i]);
+    $(".section__book-menu--interior-top").append(item.displayBookMenu+"<br />")
 
-
-url = 'https://tba.codepanel.in/json/articles';
-  fetch(url)
-.then(response => response.json())
+    //CREATE ACTUAL BOOK TEXT (THIS NEEDS WORK)
+  $(".section__book-content").append(item.displayBookContent)
+  }
+  
+    });
+  
+  
+  
+  url = 'https://tba.codepanel.in/json/articles';
+fetch(url)
+  .then(response => response.json())
   .then(p => {
-
-
-
-
-
 
 //FOR EACH ARTICLE
 for(i=0;i<p.length;i++) {
   p[i].identity = i;
-  
-  
+    
   let item = new Article(p[i]);
 
   //CREATE INITIAL LIST ITEM
-  $(".section__main--list").append(item.displayList)
+  $(item.displayList)
+      .appendTo(".section__main--list")
+      .css({
+        "left":Math.floor(Math.random()*($(window).width()-300)),
+        "top":120+Math.floor(Math.random()*($(window).height()-240))
+      });
 
   //CREATE CREATE ITEM FOR BOOK MENU
-  $(".section__book-menu--interior").append(item.displayBookMenu+"<br />")
+  $(".section__book-menu--interior-bottom").append(item.displayBookMenu+"<br />")
 
 
   //CREATE ACTUAL BOOK TEXT (THIS NEEDS WORK)
@@ -32,22 +48,15 @@ for(i=0;i<p.length;i++) {
 }
 
   //ADD BUTTON TO BOOK MENU
-  $(".section__book-menu--interior").append(' <button id=make-book>Make Book</button>')
+  
 
-
-
-
-    
+  
 //ADD LIST CLICK
 $(".section__main--list li").click(function(){
   loadText($(this).data("item"));
 });
 
 //checking on the checkboxes
-
-
-
-
 $("input[type=checkbox]").change(function(){
   
   AC = "#book-article-"+$(this).data("nid");
@@ -61,16 +70,15 @@ $("input[type=checkbox]").change(function(){
 
 
 
-
-
 //UPON PAGE LOAD CLICK ON APPROPRIATE LINK BASED ON URL HASH
   if (window.location.hash != '') {
     l = window.location.hash.replace("#","#link-");
     $(l).click();
   }
 
-    $(".pull-data").click(function(){
-      
+    $(".page-item").click(function(){
+      //console.log(pages);
+      console.log($(this).data("nid"))
       loadPage($(this).data("nid"))
     })
 
@@ -81,49 +89,68 @@ $("input[type=checkbox]").change(function(){
       $("body").append(article.displayFull);
   }
 
+  function loadPage(nid) {
+    
+    for (var i=0; i < pages.length; i++) {
+      console.log(pages[i].nid)
+      if (parseInt(pages[i].nid) === nid) {
+          page = new Page(pages[i]);
+          console.log(page)
+          $("body").append(page.displayFull)
+      }
+    }
+  }
 
 
   
 
 
-  function loadPage(node) {
-    url = 'https://tba.codepanel.in/json/page/'+node;
-    fetch(url)
-  .then(response => response.json())
-    .then(j => {
-  console.log(j)
-  
-
-      
-    $(".popout").remove();
-    /* html */
+//   function loadPage(node) {
+//     page = new Page(p[identity]);      
+//     $("body").append(article.displayFull);
+//     /* html */
     
     
-  let popout = `
-  <div class='popout'>
-      <div class="popout__menu">
-          <div class="popout__pub">M</div>
-          <div class="popout__close">&times;</div>
-      </div>
+//   let popout = `
+//   <div class='popout'>
+//       <div class="popout__menu">
+//           <div class="popout__pub">M</div>
+//           <div class="popout__close">&times;</div>
+//       </div>
       
-      <div class="popout__interior">
-        <div class="popout__interior--left">
-            <h2>${j[0].title}</h2>
-            <br /><br />
-            ${j[0].body.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files")}
-          </div>
+//       <div class="popout__interior">
+//         <div class="popout__interior--left">
+//             <h2>${j[0].title}</h2>
+//             <br /><br />
+//             ${j[0].body.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files")}
+//           </div>
           
-      </div>
-  </div>
-  `
+//       </div>
+//   </div>
+//   `
   
-  $(popout)
-  .appendTo("body")
-})
-}
+//   $(popout)
+//   .appendTo("body")
+// })
+// }
 
 $(document).on("click",".popout__pub",function(){
+
+  
+
+
+
     $(".section__book-menu").fadeIn(200)
+
+    // $(document).on("click",".section__book-menu",function(){
+    //   $(this).fadeOut(200);
+    // })
+
+    $(document).keyup(function(e) {
+      if (e.key === "Escape") { // escape key maps to keycode `27`
+        $(".section__book-menu").fadeOut(200)
+     }
+ });
 
 
     $("#book-link-"+$(this).data('nid')).prop("checked", true);
@@ -142,20 +169,9 @@ $(document).on("click",".popout__pub",function(){
     })
 
     
-    
+
 })
 
-
-$(document).on("click","#make-book",function(){
-
-  //$(".section__book-content").css("display","block")
-  let c =  ".section__book-content.active";
-  //let c = "#book-contents";
-  
-    
-    Bindery.makeBook({ content:c });
-    
-})
 
   $(document).on("click","#toggle-view",function(){
     $(".section__main--list").toggleClass("random");
@@ -170,7 +186,9 @@ $(document).on("click","#make-book",function(){
 
   $(document).on("click",".popout__close",function(){
     $(".popout").remove();
-    history.pushState('', document.title, window.location.pathname);
+    title = 'TBA | Title TK';
+    $("title").html(title)
+    history.pushState('', title, window.location.pathname);
   })
 
 })

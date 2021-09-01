@@ -64,9 +64,15 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
   animation: breathe 10000ms infinite both; }
 
+h1 {
+  position: relative;
+  top: 2.5rem; }
+
 h2 {
-  font-size: 5rem;
-  line-height: 1em; }
+  padding-top: 5vh;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center; }
 
 h3 {
   font-size: 3rem;
@@ -79,8 +85,11 @@ h5 {
   margin: 0;
   line-height: 1em; }
 
-h1, h2, h3, h4, p {
+h2, h3, h4, p {
   margin-bottom: 1.5rem; }
+
+.popout {
+  color: #2B2B00; }
 
 .popout__interior--right {
   font-size: 1.5rem; }
@@ -103,9 +112,20 @@ h1, h2, h3, h4, p {
   text-decoration: none; }
 
 .editorial {
-  padding-left: 2em;
-  font-size: 1.25em;
+  font-size: 2rem;
   font-family: 'burgess'; }
+  .editorial--author {
+    text-align: right; }
+
+.popout__interior--biography,
+.footnotes {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-family: 'burgess';
+  width: 50%; }
+
+.footnotes {
+  margin-left: 50%; }
 
 .see-footnote {
   vertical-align: super;
@@ -123,14 +143,20 @@ h1, h2, h3, h4, p {
   display: inline-block;
   padding-left: 3em; }
 
+.lead__image--caption,
 .caption {
   font-style: italic;
-  width: 75%;
-  margin-left: 25%;
+  font-family: burgess;
   line-height: 1.2em;
-  text-align: right;
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1.5rem; }
+
+label {
+  font-size: 2.5rem; }
+
+input[type="checkbox"] {
+  margin-right: 1em; }
 
 input[type="checkbox"] + label {
   transition: all 0.3s; }
@@ -145,13 +171,14 @@ input[type="checkbox"]:checked + label {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1rem;
-  background: #000;
-  z-index: 10; }
+  background: #2B2B00;
+  z-index: 10;
+  height: 10rem; }
   .header__tba img {
     max-width: 100%;
     width: auto;
     height: auto;
-    max-height: 5.5rem; }
+    max-height: 9.5rem; }
   .header__publication-title {
     text-align: center; }
   .header__menu {
@@ -168,7 +195,7 @@ input[type="checkbox"]:checked + label {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 3rem 1rem;
-  background: #000;
+  background: #2B2B00;
   z-index: 10; }
   .footer__menu {
     list-style-type: none;
@@ -190,8 +217,8 @@ input[type="checkbox"]:checked + label {
   .section__main--list.random {
     list-style-type: none; }
     .section__main--list.random li {
+      position: fixed;
       width: 30rem;
-      font-size: 0.66666em;
       cursor: pointer; }
       .section__main--list.random li:hover {
         color: #CC9B2C; }
@@ -199,11 +226,10 @@ input[type="checkbox"]:checked + label {
 .popout {
   position: absolute;
   top: 60px;
-  background: #CC9B2C;
+  background: #FFF;
   z-index: 5;
   width: 100%;
-  min-height: 100vh;
-  color: #000; }
+  min-height: 100vh; }
   .popout__menu {
     position: absolute;
     right: 1rem;
@@ -217,13 +243,13 @@ input[type="checkbox"]:checked + label {
         color: #FFF; }
   .popout__interior {
     max-width: 120rem;
-    margin: 3rem auto 12rem; }
-    .popout__interior--grid {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-      grid-column-gap: 1em; }
-      .popout__interior--grid-right {
-        font-size: 0.8em; }
+    padding: 0 10vw;
+    margin: 3rem auto 20rem; }
+    .popout__interior--grid-right {
+      font-size: 0.8em; }
+
+.lead__image {
+  margin-bottom: 5vw; }
 
 .section__book-menu {
   width: 100vw;
@@ -234,13 +260,25 @@ input[type="checkbox"]:checked + label {
   z-index: 20;
   background: rgba(0, 0, 0, 0.75);
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: none; }
   .section__book-menu--interior {
-    font-size: 2em;
-    line-height: 1.4em; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5em;
+    max-width: 1000px; }
+
+.editorial {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 5vh 0;
+  border-bottom: 1px solid #2B2B00;
+  padding-bottom: 5vh; }
+  .editorial--illustration img {
+    position: relative;
+    top: 3vw;
+    left: -3vw; }
 
 .section__book-content {
   display: none; }
@@ -254,6 +292,9 @@ input[type="checkbox"]:checked + label {
 .📖-root {
   color: black; }
 
+.book--editorial {
+  font-family: 'burgess'; }
+
 .body {
-  background: #000;
+  background: #2B2B00;
   color: #FFF; }

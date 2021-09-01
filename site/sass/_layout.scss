@@ -16,9 +16,9 @@
         list-style-type:none;
 
         & li {
-            //position:fixed;
+            position:fixed;
             width:30rem;
-            font-size:0.66666em;
+            // font-size:0.66666em;
             cursor:pointer;
 
             &:hover {
@@ -36,11 +36,11 @@
 .popout {
     position:absolute;
     top:60px;
-    background:$yellow;
+    background:$white;
     z-index:5;
     width:100%;
     min-height:100vh;
-    color:$black;
+    // color:$black;
 
     &__menu {
         position: absolute;
@@ -64,15 +64,17 @@
     }
 
     &__interior {
-        max-width:120rem;
-        margin:3rem auto 12rem;
+         max-width:120rem;
+        padding:0 10vw;
+        margin:3rem auto 20rem;
         
         
 
         &--grid {
-            display:grid;
-            grid-template-columns:3fr 2fr;
-            grid-column-gap:1em;
+            // display:grid;
+            //grid-template-columns:3fr 2fr;
+            
+            //grid-column-gap:1em;
 
             &-right {
                 font-size:0.8em;
@@ -81,6 +83,10 @@
     }
 }
 
+
+.lead__image {
+    margin-bottom:5vw;
+}
 
 .section__book-menu {
     width:100vw;
@@ -91,17 +97,41 @@
     z-index:20;
     background:rgba($black,0.75);
     color:white;
-    display:flex;   
-    justify-content: center;
-    align-items: center;   
+    // display:flex;   
+    // justify-content: center;
+    // align-items: center;   
     display:none;
 
     &--interior {
-        font-size:2em;
-        line-height:1.4em;
+        // font-size:2em;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        line-height:1.5em;
+        max-width:1000px;
     }    
 }
 
+
+.editorial {
+    display:grid;
+    grid-template-columns:1fr 3fr;
+  margin:5vh 0;
+  border-bottom:1px solid $green;
+  padding-bottom: 5vh;
+
+
+    &--content {
+        
+    }
+
+    &--illustration img {
+        position:relative;
+        top:3vw;
+        left:-3vw;
+    }
+}
 
 .section__book-content {
     display:none;

@@ -98,9 +98,17 @@ h1, h2, h3, h4, h5 {
     font-weight:normal;
     animation: breathe 10000ms infinite both;
 }
+
+h1 {
+  position: relative;
+  top: 2.5rem;
+}
 h2 {
-    font-size:5rem;
-    line-height:1em;
+      padding-top:5vh;
+    font-size:3.2rem;
+    line-height:4rem;
+    text-align:center;
+    
 }
 h3 {
     font-size:3rem;
@@ -117,8 +125,11 @@ h5 {
 
 
 
-h1, h2, h3, h4, p {
+h2, h3, h4, p {
   margin-bottom:1.5rem;
+}
+.popout {
+  color:$green;
 }
 
 .popout__interior--right {
@@ -151,9 +162,26 @@ h1, h2, h3, h4, p {
 }
 
 .editorial {
-  padding-left:2em;
-  font-size:1.25em;
+  
+  font-size:2rem;
   font-family: 'burgess';
+  
+  &--author {
+    text-align:right;
+  }
+}
+
+.popout__interior--biography,
+.footnotes {
+  
+  font-size:1.7rem;
+  line-height:2rem;
+  font-family: 'burgess';
+  width:50%;
+}
+
+.footnotes {
+  margin-left:50%;
 }
 
 .see-footnote {
@@ -177,14 +205,23 @@ h1, h2, h3, h4, p {
   padding-left:3em;
 }
 
+.lead__image--caption,
 .caption {
   font-style:italic;
-  width:75%;
-  margin-left:25%;
+  // width:80%;
+  // margin-left:20%;
+  font-family:burgess;
   line-height:1.2em;
-  text-align:right;
+  text-align:center;
   font-size:1.5rem;
   margin-bottom:1.5rem;
+}
+
+label {
+  font-size:2.5rem;
+}
+input[type="checkbox"] {
+  margin-right:1em;
 }
 
 input[type="checkbox"] + label {

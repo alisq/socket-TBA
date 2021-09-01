@@ -3,10 +3,15 @@ class Article {
         this.nid = content.nid;
         this.identity = content.identity;
         this.contents = content.field_article_contents.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");;
+        this.editorial_author = content.field_intro_text_author;
         this.editorial = content.field_editorial;
         this.artists = content.field_artist_s_;
         this.title = content.title;
         this.bio = content.body;
+        this.image = content.field_image.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");
+        this.image_caption = $(this.image).attr('alt');
+        
+      
     }
 
     get displayList() {
@@ -20,7 +25,32 @@ class Article {
     }
 
     get displayBookContent() {
-        let item = `<div class="section__book-content--article" id="book-article-${this.nid}">${this.artists} — ${this.title}<br /><br />${this.bio}<br /><br />${this.contents}</div>`;
+        
+        /* html */
+        let item = `<div class="section__book-content--article" id="book-article-${this.nid}">
+                        <h2>${this.artists}<br /> ${this.title}</h2>
+                    
+                        <div class="book--editorial">
+                            
+                            
+                                ${this.editorial}
+                                <div class="editorial--author">&mdash;${this.editorial_author}</div>
+                            </div>
+                        </div>
+                        
+                        <div class="lead__image">
+                            ${this.image}
+                            <div class="lead__image--caption">
+                                ${this.image_caption}
+                            </div>
+                        </div>
+
+                        ${this.contents}
+                                            
+                        <div class="popout__interior--biography">
+                            ${this.bio}
+                        </div>
+                    </div>`;
         return item;
     }
 
@@ -47,17 +77,35 @@ class Article {
             <div class="popout__interior">
             
                   <div class="popout__interior--grid">    
-              <div class="popout__interior--grid-left">
-              <div class="editorial">${this.editorial}</div>
+              <!-- <div class="popout__interior--grid-left"> -->
+
               <h2>${this.artists}<br />
-                  ${this.title}</h2>
-        
-                  <br /><br />
-                  ${this.contents}
-                </div>
-                <div class="popout__interior--grid-right">
-                ${this.bio}
+              ${this.title}</h2>
+
+              <div class="editorial">
+                    <div class="editorial--illustration">
+                        <img src="${"img/editorial--illustration"+Math.floor(Math.random()*2)+".png"}" />
+                    </div>
+                    <div class="editorial--content">
+                        ${this.editorial}
+                        <div class="editorial--author">&mdash;${this.editorial_author}</div>
+                    </div>
               </div>
+              
+        
+                <div class="lead__image">
+                  ${this.image}
+                    <div class="lead__image--caption">
+                        ${this.image_caption}
+                    </div>
+                </div>
+                  ${this.contents}
+                <!-- </div>
+                <div class="popout__interior--grid-right">-->
+                <div class="popout__interior--biography">
+                    ${this.bio}
+                </div>
+            <!--   </div> -->
               </div>
             </div>
         </div>
