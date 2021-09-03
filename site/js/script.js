@@ -136,21 +136,9 @@ $("input[type=checkbox]").change(function(){
 
 $(document).on("click",".popout__pub",function(){
 
-  
-
-
 
     $(".section__book-menu").fadeIn(200)
 
-    // $(document).on("click",".section__book-menu",function(){
-    //   $(this).fadeOut(200);
-    // })
-
-    $(document).keyup(function(e) {
-      if (e.key === "Escape") { // escape key maps to keycode `27`
-        $(".section__book-menu").fadeOut(200)
-     }
- });
 
 
     $("#book-link-"+$(this).data('nid')).prop("checked", true);
@@ -166,6 +154,17 @@ $(document).on("click",".popout__pub",function(){
       } else {
         $(AC).removeClass("active");
       }
+
+
+      $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+          $(".section__book-content").removeClass("active")
+          $(".section__book-menu").fadeOut(200)
+  
+       }
+   });
+  
+  
     })
 
     

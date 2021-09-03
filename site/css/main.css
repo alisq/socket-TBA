@@ -237,6 +237,8 @@ input[type="checkbox"]:checked + label {
     font-size: 10rem;
     font-weight: 100;
     cursor: pointer; }
+    .popout__menu img {
+      max-width: 5rem; }
     .popout__menu div {
       display: inline-block; }
       .popout__menu div:hover {

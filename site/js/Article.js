@@ -70,7 +70,8 @@ class Article {
        let popout = `
         <div class='popout' id='popout__${this.nid}'>
             <div class="popout__menu">
-                <div class="popout__pub" data-nid="${this.nid}">M</div>
+                <div class="popout__pub" data-nid="${this.nid}"><img class="popout__menu--img" src="img/book.svg">
+                </div>
                 <div class="popout__close">&times;</div>
             </div>
             

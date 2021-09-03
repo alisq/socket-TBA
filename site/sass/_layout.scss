@@ -50,6 +50,10 @@
         font-weight: 100;
         cursor:pointer;
 
+
+        & img {
+            max-width:5rem;
+        }
         
 
         & div {
