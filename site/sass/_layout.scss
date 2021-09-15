@@ -14,7 +14,7 @@
     &--list.random {
 
         list-style-type:none;
-        height:calc(100vh - 120px);
+        height:calc(100vh - 240px);
         display:grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -26,6 +26,7 @@
             // font-size:0.66666em;
             cursor:pointer;
             padding:1em;
+            line-height:1.05em;
             //border:1px solid white;
 
             &:hover {
@@ -131,17 +132,21 @@
     grid-template-columns:1fr 3fr;
   margin:5vh 0;
   border-bottom:1px solid $green;
-  padding-bottom: 5vh;
+  
 
 
     &--content {
-        
+        padding-bottom: 5vh;
     }
 
-    &--illustration img {
+
+
+    &--illustration {
+        width:60%;
         position:relative;
-        top:3vw;
-        left:-3vw;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
     }
 }
 

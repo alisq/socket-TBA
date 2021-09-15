@@ -30,11 +30,11 @@ class Page {
     get displayFull() {
 
 
-        let title =  this.title+" — "+this.artists;
+        let title =  this.title;
         $("title").text(title)
-        history.pushState('',title, window.location.pathname+'#'+this.nid);
 
         $(".popout").remove();
+        console.log(this.nid)
 
         /* html */
        let popout = `
@@ -62,6 +62,7 @@ class Page {
             </div>
         </div>
         `
+        history.pushState('',title, window.location.pathname+'#'+this.nid);
 
         return popout;
     }

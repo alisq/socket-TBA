@@ -89,8 +89,7 @@ class Article {
               ${this.title}</h2>
 
               <div class="editorial">
-                    <div class="editorial--illustration">
-                        <img src="${"img/editorial--illustration"+Math.floor(Math.random()*2)+".png"}" />
+                    <div class="editorial--illustration" style="background-image:url('${"img/editorial--illustration"+Math.floor(Math.random()*2)+".png"}')" />
                     </div>
                     <div class="editorial--content">
                         ${this.editorial}

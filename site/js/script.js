@@ -92,6 +92,8 @@ $("input[type=checkbox]").change(function(){
       //console.log(pages);
       console.log($(this).data("nid"))
       loadPage($(this).data("nid"))
+      history.pushState('',"title", window.location.pathname+'#'+$(this).data("nid"));
+
     })
 
 
@@ -104,10 +106,12 @@ $("input[type=checkbox]").change(function(){
   function loadPage(nid) {
     
     for (var i=0; i < pages.length; i++) {
-      console.log(pages[i].nid)
+      
       if (parseInt(pages[i].nid) === nid) {
           page = new Page(pages[i]);
           console.log(page)
+          history.pushState('',page.title, window.location.pathname+'#'+page.nid);
+
           $("body").append(page.displayFull)
       }
     }
@@ -214,6 +218,16 @@ $(document).on("click","h1",function(){
     history.pushState('', title, window.location.pathname);
   }
   
+})
+
+$(document).on("click",".see-footnote",function(e){
+  e.preventDefault();
+  fn = "#"+$(this).attr("id").replace("ref","");
+
+  console.log($(fn).position().top)
+  $(document).scrollTo("100%", 200)
+  // footnoteref2_jqc03ke
+  // footnote1_ptp15bx
 })
 
 
