@@ -6,7 +6,7 @@
 }
 
 .section__main {
-    max-width:100rem;
+    //max-width:100rem;
 
     margin:10rem auto;
     font-size:3rem;
@@ -14,12 +14,19 @@
     &--list.random {
 
         list-style-type:none;
+        height:calc(100vh - 120px);
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        
 
         & li {
-            position:fixed;
-            width:30rem;
+            //position:fixed;
+            //width:30rem;
             // font-size:0.66666em;
             cursor:pointer;
+            padding:1em;
+            //border:1px solid white;
 
             &:hover {
                 color:$yellow;
@@ -43,16 +50,17 @@
     // color:$black;
 
     &__menu {
-        position: absolute;
+        position: fixed;
         right: 1rem;
-        top: 6rem;
+        top: 13rem;
         font-size: 10rem;
         font-weight: 100;
         cursor:pointer;
+        z-index:99;
 
 
         & img {
-            max-width:5rem;
+            width:5rem;
         }
         
 

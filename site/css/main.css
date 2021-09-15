@@ -12,8 +12,11 @@ html {
 
 img {
   max-width: 100%;
-  width: 100%;
-  height: auto; }
+  width: auto;
+  height: auto;
+  max-height: 75vh;
+  margin: auto;
+  display: block; }
 
 @font-face {
   font-family: 'calibre123';
@@ -66,7 +69,8 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   position: relative;
-  top: 2.5rem; }
+  top: 2.5rem;
+  cursor: pointer; }
 
 h2 {
   padding-top: 5vh;
@@ -75,9 +79,15 @@ h2 {
   text-align: center; }
 
 h3 {
+  margin-top: 1em;
   font-size: 3rem;
   font-weight: bold;
-  letter-spacing: 0.02; }
+  letter-spacing: 0.02;
+  text-align: center; }
+
+h4 {
+  margin-top: 2em;
+  font-size: 1.2em; }
 
 h5 {
   font-size: 40vw;
@@ -145,7 +155,6 @@ h2, h3, h4, p {
 
 .lead__image--caption,
 .caption {
-  font-style: italic;
   font-family: burgess;
   line-height: 1.2em;
   text-align: center;
@@ -211,15 +220,17 @@ input[type="checkbox"]:checked + label {
   top: 0px; }
 
 .section__main {
-  max-width: 100rem;
   margin: 10rem auto;
   font-size: 3rem; }
   .section__main--list.random {
-    list-style-type: none; }
+    list-style-type: none;
+    height: calc(100vh - 120px);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
     .section__main--list.random li {
-      position: fixed;
-      width: 30rem;
-      cursor: pointer; }
+      cursor: pointer;
+      padding: 1em; }
       .section__main--list.random li:hover {
         color: #CC9B2C; }
 
@@ -231,14 +242,15 @@ input[type="checkbox"]:checked + label {
   width: 100%;
   min-height: 100vh; }
   .popout__menu {
-    position: absolute;
+    position: fixed;
     right: 1rem;
-    top: 6rem;
+    top: 13rem;
     font-size: 10rem;
     font-weight: 100;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 99; }
     .popout__menu img {
-      max-width: 5rem; }
+      width: 5rem; }
     .popout__menu div {
       display: inline-block; }
       .popout__menu div:hover {

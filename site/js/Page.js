@@ -40,7 +40,8 @@ class Page {
        let popout = `
         <div class='popout' id='popout__${this.nid}'>
             <div class="popout__menu">
-                <div class="popout__pub" data-nid="${this.nid}">M</div>
+            <div class="popout__pub" data-nid="${this.nid}"><img class="popout__menu--img" src="img/book.svg">
+            </div>
                 <div class="popout__close">&times;</div>
             </div>
             
@@ -48,15 +49,14 @@ class Page {
             
                   <div class="popout__interior--grid">    
               <div class="popout__interior--grid-left">
-              <div class="editorial">${this.editorial}</div>
-              <h2>${this.artists}<br />
-                  ${this.title}</h2>
+               
+              <h2>${this.title}</h2>
         
                   <br /><br />
                   ${this.contents}
                 </div>
                 <div class="popout__interior--grid-right">
-                ${this.bio}
+                
               </div>
               </div>
             </div>

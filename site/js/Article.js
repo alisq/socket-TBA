@@ -10,6 +10,9 @@ class Article {
         this.bio = content.body;
         this.image = content.field_image.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");
         this.image_caption = $(this.image).attr('alt');
+        if (this.image_caption == undefined) {
+            this.image_caption="";
+        }
         
       
     }
@@ -37,6 +40,8 @@ class Article {
                                 <div class="editorial--author">&mdash;${this.editorial_author}</div>
                             </div>
                         </div>
+                        
+
                         
                         <div class="lead__image">
                             ${this.image}

@@ -1,4 +1,7 @@
 
+let order= [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+shuffle(order);
+
 let pages = [];
   
     url = 'https://tba.codepanel.in/json/pages/';
@@ -24,6 +27,9 @@ fetch(url)
   .then(response => response.json())
   .then(p => {
 
+    
+    p.splice(6, 1);
+
 //FOR EACH ARTICLE
 for(i=0;i<p.length;i++) {
   p[i].identity = i;
@@ -33,10 +39,7 @@ for(i=0;i<p.length;i++) {
   //CREATE INITIAL LIST ITEM
   $(item.displayList)
       .appendTo(".section__main--list")
-      .css({
-        "left":Math.floor(Math.random()*($(window).width()-300)),
-        "top":120+Math.floor(Math.random()*($(window).height()-240))
-      });
+    
 
   //CREATE CREATE ITEM FOR BOOK MENU
   $(".section__book-menu--interior-bottom").append(item.displayBookMenu+"<br />")
@@ -47,15 +50,24 @@ for(i=0;i<p.length;i++) {
   
 }
 
-  //ADD BUTTON TO BOOK MENU
-  
+
 
   
 //ADD LIST CLICK
-$(".section__main--list li").click(function(){
-  loadText($(this).data("item"));
-});
+$(".section__main--list li")
 
+  .click(function(){
+    loadText($(this).data("item"));
+  }).each(function(index){
+    $(this)  .css({
+        
+      "order":order[index]
+    })
+  });
+
+
+
+  
 //checking on the checkboxes
 $("input[type=checkbox]").change(function(){
   
@@ -136,9 +148,21 @@ $("input[type=checkbox]").change(function(){
 
 $(document).on("click",".popout__pub",function(){
 
+  
+
+
 
     $(".section__book-menu").fadeIn(200)
 
+    // $(document).on("click",".section__book-menu",function(){
+    //   $(this).fadeOut(200);
+    // })
+
+    $(document).keyup(function(e) {
+      if (e.key === "Escape") { // escape key maps to keycode `27`
+        $(".section__book-menu").fadeOut(200)
+     }
+ });
 
 
     $("#book-link-"+$(this).data('nid')).prop("checked", true);
@@ -154,17 +178,6 @@ $(document).on("click",".popout__pub",function(){
       } else {
         $(AC).removeClass("active");
       }
-
-
-      $(document).keyup(function(e) {
-        if (e.key === "Escape") { // escape key maps to keycode `27`
-          $(".section__book-content").removeClass("active")
-          $(".section__book-menu").fadeOut(200)
-  
-       }
-   });
-  
-  
     })
 
     
@@ -185,10 +198,39 @@ $(document).on("click",".popout__pub",function(){
 
   $(document).on("click",".popout__close",function(){
     $(".popout").remove();
-    title = 'TBA | Title TK';
+    title = 'TBA | Programs Publication';
     $("title").html(title)
     history.pushState('', title, window.location.pathname);
   })
+  
 
 })
   
+$(document).on("click","h1",function(){
+  if ($(".popout").length > 0) {
+    $(".popout").remove();
+    title = 'TBA | Programs Publication';
+    $("title").html(title)
+    history.pushState('', title, window.location.pathname);
+  }
+  
+})
+
+
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}

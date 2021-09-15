@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   position: relative;
   top: 2.5rem;
+  cursor:pointer;
 }
 h2 {
       padding-top:5vh;
@@ -111,9 +112,16 @@ h2 {
     
 }
 h3 {
+    margin-top:1em;
     font-size:3rem;
     font-weight:bold;
     letter-spacing:0.02;
+    text-align:center
+}
+
+h4 {
+  margin-top:2em;
+  font-size: 1.2em;
 }
 
 h5 {
@@ -207,7 +215,7 @@ h2, h3, h4, p {
 
 .lead__image--caption,
 .caption {
-  font-style:italic;
+  // font-style:italic;
   // width:80%;
   // margin-left:20%;
   font-family:burgess;
