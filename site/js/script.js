@@ -10,7 +10,7 @@ let pages = [];
     .then(j => {
   pages = [...j]
 
-  for (i=0;i<j.length;j++) {
+  for (i=0;i<j.length;i++) {
     let item = new Page(j[i]);
     $(".section__book-menu--interior-top").append(item.displayBookMenu+"<br />")
 
@@ -177,7 +177,7 @@ $(document).on("click",".popout__pub",function(){
     $(".section__book-content").addClass("active")
 
     $("input[type=checkbox]").each(function(){
-  
+      console.log("fire")
       AC = "#book-article-"+$(this).data("nid");
       if ($(this).is(':checked')) {
         $(AC).addClass("active");

@@ -30,7 +30,7 @@ class Article {
     get displayBookContent() {
         
         /* html */
-        let item = `<div class="section__book-content--article" id="book-article-${this.nid}">
+        let item = `<chapter class="section__book-content--article" id="book-article-${this.nid}">
                         <h2>${this.artists}<br /> ${this.title}</h2>
                     
                         <div class="book--editorial">
@@ -55,7 +55,7 @@ class Article {
                         <div class="popout__interior--biography">
                             ${this.bio}
                         </div>
-                    </div>`;
+                    </chapter>`;
         return item;
     }
 

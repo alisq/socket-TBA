@@ -1,9 +1,8 @@
 .📖-root {
     color:black;
-}
 
-.📖-left .📖-running-header,
-.📖-right .📖-running-header {
+    .📖-left .📖-running-header,
+    .📖-right .📖-running-header {
     right:auto!important;
     left:auto!important;    
     display: grid;
@@ -16,11 +15,29 @@
     font-family: 'burgess'; 
 }
 
-.📖-root h1,
-.📖-root h2,
-.📖-root h3,
-.📖-root h4,
-.📖-root h5 {
+
+& h1,
+& h2,
+& h3,
+& h4,
+& h5 {
     animation: none!important;
     font-variation-settings: 'bloo' 200!important;
 }
+
+
+
+
+& .popout__interior--biography, .📖-root .footnotes {
+    width:100%;
+}
+
+
+}
+
+
+
+
+
+
+

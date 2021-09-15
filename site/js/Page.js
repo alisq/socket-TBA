@@ -20,7 +20,7 @@ class Page {
     }
 
     get displayBookContent() {
-        let item = `<div class="section__book-content--article" id="book-article-${this.nid}">${this.artists} — ${this.title}<br /><br />${this.bio}<br /><br />${this.contents}</div>`;
+        let item = `<chapter class="section__book-content--article" id="book-article-${this.nid}">${this.artists} — ${this.title}<br /><br />${this.bio}<br /><br />${this.contents}</chapter>`;
         return item;
     }
 
