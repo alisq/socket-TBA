@@ -40,8 +40,6 @@ img {
 @keyframes breathe {
   0% {
     font-variation-settings: 'bloo' 0; }
-  60% {
-    font-variation-settings: 'bloo' 0; }
   80% {
     font-variation-settings: 'bloo' 200; }
   100% {
