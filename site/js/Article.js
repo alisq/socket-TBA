@@ -23,7 +23,7 @@ class Article {
     }
 
     get displayBookMenu() {
-        let item = `<input type='checkbox' id='book-link-${this.nid}' data-nid='${this.nid}'> <label for='book-link-${this.nid}' >${this.artists} — ${this.title}</label>`
+        let item = `<input type='checkbox' class="book-link" id='book-link-${this.nid}' data-nid='${this.nid}'> <label for='book-link-${this.nid}' >${this.artists} — ${this.title}</label>`
         return item;
     }
 

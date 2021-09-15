@@ -169,6 +169,9 @@ $(document).on("click",".popout__pub",function(){
  });
 
 
+ 
+
+
     $("#book-link-"+$(this).data('nid')).prop("checked", true);
 
     $(".section__book-content").addClass("active")
@@ -187,6 +190,43 @@ $(document).on("click",".popout__pub",function(){
     
 
 })
+
+
+
+$(document).on("click",".page-item-make-book",function(){
+
+  
+
+
+
+  $(".section__book-menu").fadeIn(200)
+
+  // $(document).on("click",".section__book-menu",function(){
+  //   $(this).fadeOut(200);
+  // })
+
+  $(document).keyup(function(e) {
+    if (e.key === "Escape") { // escape key maps to keycode `27`
+      $(".section__book-menu").fadeOut(200)
+   }
+});
+
+
+$(".book-link").prop("checked", true);
+
+    $(".section__book-content").addClass("active")
+
+    $("input[type=checkbox]").each(function(){
+  
+      AC = "#book-article-"+$(this).data("nid");
+      if ($(this).is(':checked')) {
+        $(AC).addClass("active");
+    
+      } else {
+        $(AC).removeClass("active");
+      }
+    })
+});
 
 
   $(document).on("click","#toggle-view",function(){

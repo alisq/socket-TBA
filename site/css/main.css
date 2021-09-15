@@ -308,8 +308,25 @@ input[type="checkbox"]:checked + label {
 .📖-root {
   color: black; }
 
+.📖-left .📖-running-header,
+.📖-right .📖-running-header {
+  right: auto !important;
+  left: auto !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center !important;
+  width: 100%; }
+
 .book--editorial {
   font-family: 'burgess'; }
+
+.📖-root h1,
+.📖-root h2,
+.📖-root h3,
+.📖-root h4,
+.📖-root h5 {
+  animation: none !important;
+  font-variation-settings: "bloo" 200 !important; }
 
 .body {
   background: #2B2B00;

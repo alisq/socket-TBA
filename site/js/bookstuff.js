@@ -11,18 +11,26 @@ $(document).on("click","#make-book",function(){
     
 
     let runningHeaders = Bindery.RunningHeader({
-        render: (page) => page.isLeft
-          ? `${page.number} · Jan Tschichold`
-          : `Publication Title · ${page.number}`
+        render: (page) =>  {return `<div class="book__head--left">Toronto Biennial of Art</div>  <div class="book__head--center">${page.number}</div> <div class="book__head--right">Programs Publication</div>` }
+          
       });
       
+
+      let breakRule = Bindery.PageBreak({
+        selector: 'h2',
+        position: 'before',
+      });
+      
+      let spreadRule = Bindery.FullBleedSpread({
+        selector: '.big-figure',
+      });
     
       
       Bindery.makeBook({ 
           content:c,
           view: Bindery.View.PRINT,
           printSetup: { layout: Bindery.Layout.PAGES },
-          rules: [runningHeaders],
+          rules: [runningHeaders, breakRule, spreadRule],
           pageSetup: {
             size: { width: '8.5in', height: '11in' },
             

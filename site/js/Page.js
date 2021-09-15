@@ -15,7 +15,7 @@ class Page {
     }
 
     get displayBookMenu() {
-        let item = `<input type='checkbox' id='book-link-${this.nid}' data-nid='${this.nid}' checked> <label for='book-link-${this.nid}' >${this.title}</label>`
+        let item = `<input type='checkbox'  class="book-link" id='book-link-${this.nid}' data-nid='${this.nid}' checked> <label for='book-link-${this.nid}' >${this.title}</label>`
         return item;
     }
 
