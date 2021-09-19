@@ -305,6 +305,27 @@ input[type="checkbox"]:checked + label {
     .section__book-content--article.active {
       display: block; }
 
+.preamble--cover {
+  position: fixed;
+  background: rgba(43, 43, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 900; }
+
+.preamble--text {
+  position: absolute;
+  background: white;
+  color: #2B2B00;
+  padding: 2em;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .📖-root {
   color: black; }
   .📖-root .📖-left .📖-running-header,

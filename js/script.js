@@ -8,7 +8,13 @@ let pages = [];
     fetch(url)
   .then(response => response.json())
     .then(j => {
-  pages = [...j]
+      
+
+      
+
+      $(".preamble--text").html(j[0].body)
+  pages = [...j].splice(0,1)
+  
 
   for (i=0;i<j.length;i++) {
     let item = new Page(j[i]);
@@ -288,3 +294,4 @@ function shuffle(array) {
 
   return array;
 }
+

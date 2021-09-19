@@ -18,7 +18,7 @@ class Article {
     }
 
     get displayList() {
-        let item = `<li data-item='${this.identity}' id='link-${this.nid}' data-nid='${this.nid}'>${this.artists}<br />${this.title}</li>`
+        let item = `<li class="article-list" data-item='${this.identity}' id='link-${this.nid}' data-nid='${this.nid}'>${this.artists}<br />${this.title}</li>`
         return item;
     }
 

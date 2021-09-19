@@ -164,3 +164,29 @@
         }
     }
 }
+
+.preamble {
+    &--cover {
+    position:fixed;
+    background:rgba($green,0.6);
+    width:100vw;
+    height:100vh;
+    top:0; left:0;
+    z-index:900;
+
+    }
+
+    &--text {
+        position:absolute;
+    background:rgba($white,1);
+    color:$green;
+    padding:2em;
+    text-align:center;
+    width:100%;
+    max-width:800px;
+    
+    top:50%; left:50%;
+    transform:translate(-50%,-50%)
+        
+    }
+}
