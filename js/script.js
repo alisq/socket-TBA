@@ -13,8 +13,8 @@ let pages = [];
       
 
       $(".preamble--text").html(j[0].body)
-  pages = [...j].splice(0,1)
-  
+  pages = [...j]
+  console.log(pages)
 
   for (i=0;i<j.length;i++) {
     let item = new Page(j[i]);
@@ -34,9 +34,18 @@ fetch(url)
   .then(p => {
 
     
-    p.splice(6, 1);
+    
+    
+    
 
+
+    // 0,2,4,5,6,7,8,9,11
+    // UE = ;
 //FOR EACH ARTICLE
+
+p.splice(0,1)
+p.splice(1,1)
+p.splice(7,1)
 for(i=0;i<p.length;i++) {
   p[i].identity = i;
     
@@ -96,7 +105,7 @@ $("input[type=checkbox]").change(function(){
 
     $(".page-item").click(function(){
       //console.log(pages);
-      console.log($(this).data("nid"))
+      
       loadPage($(this).data("nid"))
       history.pushState('',"title", window.location.pathname+'#'+$(this).data("nid"));
 
@@ -110,12 +119,12 @@ $("input[type=checkbox]").change(function(){
   }
 
   function loadPage(nid) {
-    
+      
     for (var i=0; i < pages.length; i++) {
       
       if (parseInt(pages[i].nid) === nid) {
           page = new Page(pages[i]);
-          console.log(page)
+          
           history.pushState('',page.title, window.location.pathname+'#'+page.nid);
 
           $("body").append(page.displayFull)
@@ -125,36 +134,11 @@ $("input[type=checkbox]").change(function(){
 
 
   
+ $(".section__book-menu .popout__close").click(function(){
 
+     $(".section__book-menu").fadeOut(200)
+    })
 
-//   function loadPage(node) {
-//     page = new Page(p[identity]);      
-//     $("body").append(article.displayFull);
-//     /* html */
-    
-    
-//   let popout = `
-//   <div class='popout'>
-//       <div class="popout__menu">
-//           <div class="popout__pub">M</div>
-//           <div class="popout__close">&times;</div>
-//       </div>
-      
-//       <div class="popout__interior">
-//         <div class="popout__interior--left">
-//             <h2>${j[0].title}</h2>
-//             <br /><br />
-//             ${j[0].body.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files")}
-//           </div>
-          
-//       </div>
-//   </div>
-//   `
-  
-//   $(popout)
-//   .appendTo("body")
-// })
-// }
 
 $(document).on("click",".popout__pub",function(){
 
@@ -172,6 +156,8 @@ $(document).on("click",".popout__pub",function(){
       if (e.key === "Escape") { // escape key maps to keycode `27`
         $(".section__book-menu").fadeOut(200)
      }
+     
+
  });
 
 

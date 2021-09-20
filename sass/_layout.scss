@@ -126,6 +126,16 @@
         line-height:1.5em;
         max-width:1000px;
     }    
+
+    & .popout__close {
+        position: fixed;
+        right: 1rem;
+        top: 13rem;
+        font-size: 10rem;
+        font-weight: 100;
+        cursor:pointer;
+        z-index:99;
+    }
 }
 
 

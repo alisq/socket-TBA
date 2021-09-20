@@ -5,7 +5,9 @@ class Page {
         this.contents = content.body.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");;
         //this.editorial = content.field_editorial;
         //this.artists = content.field_artist_s_;
+
         this.title = content.title;
+        this.subtitle = content.field_subtitle;
         //this.bio = content.body;
     }
 
@@ -31,6 +33,7 @@ class Page {
 
 
         let title =  this.title;
+        console.log(title)
         $("title").text(title)
 
         $(".popout").remove();
@@ -50,7 +53,11 @@ class Page {
                   <div class="popout__interior--grid">    
               <div class="popout__interior--grid-left">
                
-              <h2>${this.title}</h2>
+              <h2>${this.title}
+              
+              <br />${this.subtitle}
+              
+              </h2>
         
                   <br /><br />
                   ${this.contents}
