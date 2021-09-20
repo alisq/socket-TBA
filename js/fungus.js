@@ -12,7 +12,7 @@ class Fungus {
       this.angleChangeAmt = radians(2);
       this.speed =          0.5;
 
-      this.chanceSplit =    0.15;
+      this.chanceSplit =    0.175;
       this.splitAngle =     radians(16);
 
     // passed in from the arguments
@@ -27,7 +27,7 @@ class Fungus {
 
     // variables updated every frame
       this.distFromCenter;
-      this.maxDistance = 500+random(400);
+      this.maxDistance = 750+random(400);
       
       this.age = 0;
   }

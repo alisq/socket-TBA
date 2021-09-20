@@ -247,12 +247,17 @@ $(".book-link").prop("checked", true);
 
 
   $(document).on("click",".popout__close",function(){
+
+    $(".preamble--cover").fadeOut(100);
     $(".popout").remove();
     title = 'TBA | Programs Publication';
     $("title").html(title)
     history.pushState('', title, window.location.pathname);
   })
   
+  $(document).on("click",".preamble--cover", function(){
+      $(this).fadeOut(100);
+  });
 
 })
   

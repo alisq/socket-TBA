@@ -97,6 +97,8 @@
 }
 
 
+
+
 .lead__image {
     margin-bottom:5vw;
 }
@@ -174,6 +176,16 @@
     top:0; left:0;
     z-index:900;
 
+    & .popout__close {
+        position: fixed;
+        right: 1rem;
+        top: 13rem;
+        font-size: 10rem;
+        font-weight: 100;
+        cursor:pointer;
+        z-index:99;
+    }
+
     }
 
     &--text {
@@ -181,7 +193,7 @@
     background:rgba($white,1);
     color:$green;
     padding:2em;
-    text-align:center;
+    text-align:center; 
     width:100%;
     max-width:800px;
     
@@ -189,4 +201,6 @@
     transform:translate(-50%,-50%)
         
     }
+
+   
 }
