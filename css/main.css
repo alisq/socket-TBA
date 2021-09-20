@@ -215,6 +215,12 @@ button:active {
   padding: 3rem 1rem;
   background: #2B2B00;
   z-index: 10; }
+  .footer__tba img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 2rem;
+    margin: 0; }
   .footer__menu {
     list-style-type: none;
     text-align: right; }
@@ -231,12 +237,20 @@ button:active {
 .section__main {
   margin: 10rem auto;
   font-size: 3rem; }
+  .section__main .placeholder {
+    display: none; }
+  .section__main li {
+    font-size: 2rem;
+    line-height: 1.2em;
+    margin-bottom: 0.5em; }
   .section__main--list.random {
     list-style-type: none;
     height: calc(100vh - 240px);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); }
+    .section__main--list.random .placeholder {
+      display: block; }
     .section__main--list.random li {
       cursor: pointer;
       padding: 1em;

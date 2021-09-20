@@ -13,7 +13,7 @@ let pages = [];
       
 
       $(".preamble--text").html(j[0].body)
-      $(".preamble--cover").fadeIn(200)
+      //$(".preamble--cover").fadeIn(200)
   pages = [...j]
   //console.log(pages)
 
@@ -228,7 +228,7 @@ $(".book-link").prop("checked", true);
     if ($(".section__main--list").hasClass("random")) {
         $("#toggle-view").text("list view")
     } else {
-        $("#toggle-view").text("network view")
+        $("#toggle-view").text("Table of Contents")
     }
   })
 

@@ -11,6 +11,17 @@
     margin:10rem auto;
     font-size:3rem;
 
+    & .placeholder {
+        display:none;
+    }
+
+
+    & li { 
+        font-size:2rem;
+        line-height:1.2em;
+        margin-bottom:0.5em;
+        
+    }
     &--list.random {
 
         list-style-type:none;
@@ -19,6 +30,9 @@
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
         
+        & .placeholder {
+            display:block;
+        }
 
         & li {
             //position:fixed;
