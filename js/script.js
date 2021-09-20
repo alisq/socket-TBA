@@ -13,7 +13,7 @@ let pages = [];
       
 
       $(".preamble--text").html(j[0].body)
-      //$(".preamble--cover").fadeIn(200)
+      $(".preamble--cover").fadeIn(200)
   pages = [...j]
   //console.log(pages)
 
@@ -37,16 +37,9 @@ fetch(url)
     
     
     
-    
-
-
-    // 0,2,4,5,6,7,8,9,11
-    // UE = ;
-//FOR EACH ARTICLE
-
-p.splice(0,1)
 p.splice(1,1)
-p.splice(7,1)
+p.splice(2,1)
+console.log(p)
 for(i=0;i<p.length;i++) {
   p[i].identity = i;
     
@@ -226,9 +219,9 @@ $(".book-link").prop("checked", true);
     $(".section__main--list").toggleClass("random");
 
     if ($(".section__main--list").hasClass("random")) {
-        $("#toggle-view").text("list view")
+        $("#toggle-view").text("View as List")
     } else {
-        $("#toggle-view").text("Table of Contents")
+        $("#toggle-view").text("View as Network")
     }
   })
 

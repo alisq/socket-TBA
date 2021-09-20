@@ -41,7 +41,7 @@ function setup() {
 
 
   
-  console.log(points)
+  //console.log(points)
   
 	for(i=0; i<points.length;i++) {
 		// var vehicle = new Vehicle(points[i].x,points[i].y )

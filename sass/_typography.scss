@@ -241,12 +241,24 @@ input[type="checkbox"]:checked + label {
 }
 
 button {
-  background:$white;
-  padding:1rem;
-  font-size:2.5rem;
-  border:none;
-  border-radius:5px;
+  background:$green;
+  
+  color:$yellow;
+  padding:0.75rem 2rem;
+  font-size:1.5rem;
+  font-weight:bold;
+  border:1px solid $yellow;
+  // border:none;
+  border-radius:30px;
   font-variation-settings: 'bloo' 200;
+  
+
+
+}
+
+button:hover {
+  color:$green;
+  background:$yellow;
 }
 
 button:active {

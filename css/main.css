@@ -172,12 +172,18 @@ input[type="checkbox"]:checked + label {
   font-variation-settings: 'bloo' 200; }
 
 button {
-  background: #FFF;
-  padding: 1rem;
-  font-size: 2.5rem;
-  border: none;
-  border-radius: 5px;
+  background: #2B2B00;
+  color: #CC9B2C;
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid #CC9B2C;
+  border-radius: 30px;
   font-variation-settings: 'bloo' 200; }
+
+button:hover {
+  color: #2B2B00;
+  background: #CC9B2C; }
 
 button:active {
   font-variation-settings: 'bloo' 0; }
@@ -230,7 +236,7 @@ button:active {
 
 #defaultCanvas0 {
   position: fixed;
-  z-index: 100;
+  z-index: 5;
   pointer-events: none;
   top: 0px; }
 
