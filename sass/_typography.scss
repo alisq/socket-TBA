@@ -239,3 +239,16 @@ input[type="checkbox"] + label {
 input[type="checkbox"]:checked + label {
   font-variation-settings: 'bloo' 200;
 }
+
+button {
+  background:$white;
+  padding:1rem;
+  font-size:2.5rem;
+  border:none;
+  border-radius:5px;
+  font-variation-settings: 'bloo' 200;
+}
+
+button:active {
+  font-variation-settings: 'bloo' 0;
+}

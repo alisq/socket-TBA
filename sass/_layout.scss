@@ -110,7 +110,7 @@
     top:0;
     left:0;
     z-index:20;
-    background:rgba($black,0.75);
+    background:rgba($black,0.9);
     color:white;
     // display:flex;   
     // justify-content: center;
@@ -179,6 +179,7 @@
 
 .preamble {
     &--cover {
+        display:none;
     position:fixed;
     background:rgba($green,0.6);
     width:100vw;

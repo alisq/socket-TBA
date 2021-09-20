@@ -13,8 +13,9 @@ let pages = [];
       
 
       $(".preamble--text").html(j[0].body)
+      $(".preamble--cover").fadeIn(200)
   pages = [...j]
-  console.log(pages)
+  //console.log(pages)
 
   for (i=0;i<j.length;i++) {
     let item = new Page(j[i]);
