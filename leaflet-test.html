@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        
+
+        <style>
+            * {
+                margin:0;
+                padding:0;
+            }
+            #image-map {
+              width: 100vw;
+              height: 50vw;
+              border: 1px solid #ccc;
+              margin-bottom: 10px;
+            }
+            </style>
+            
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    </head>
+    <body>
+        <div id="image-map"></div>
+
+        <script>
+        // Using leaflet.js to pan and zoom a big image.
+        // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+    
+        // create the slippy map
+        var map = L.map('image-map', {
+          minZoom: 1.45,
+          maxZoom: 5,
+          center: [500, 500],
+          zoom: 4,
+          crs: L.CRS.Simple
+        });
+    
+        // dimensions of the image
+        var w = 5500,
+            h = 1000,
+            url = 'img/CT.jpg';
+    
+        // calculate the edges of the image, in coordinate space
+        var southWest = map.unproject([0, h], map.getMaxZoom()-1);
+        var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
+        var bounds = new L.LatLngBounds(southWest, northEast);
+    
+        // add the image overlay, 
+        // so that it covers the entire map
+        L.imageOverlay(url, bounds).addTo(map);
+    
+        // tell leaflet that the map is exactly as big as the image
+        map.setMaxBounds(bounds);
+        </script>
+    </body>
+</html>
