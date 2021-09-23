@@ -24,6 +24,10 @@
               border: 1px solid #ccc;
               margin-bottom: 10px;
             }
+
+            #image-map {
+    background: #FFF;
+}
             </style>
             
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -44,9 +48,9 @@
         // create the slippy map
         var map = L.map('image-map', {
           minZoom: 1.45,
-          maxZoom: 5,
-          center: [500, 500],
-          zoom: 4,
+          maxZoom: 8,
+          center: [1500, 500],
+          zoom: 7,
           crs: L.CRS.Simple
         });
     
