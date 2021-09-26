@@ -1,14 +1,14 @@
 .header {
-    width:100%;    
-    position:fixed;
-    top:0;
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   padding:1rem;
-   background:$green;
-   z-index:10;
-   height:10rem;
-   //border-bottom:1px solid rgba($white,0.3);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #2B2B00;
+    z-index: 10;
+    height: 10rem;
 
    &__tba img{
     //    text-align:left;
@@ -19,7 +19,7 @@
    }
  
    &__publication-title {
-       text-align:center;
+    //    text-align:center;
    }
 
    &__menu {

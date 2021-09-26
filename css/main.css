@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   position: relative;
-  top: 2.5rem;
+  line-height: 1.1;
+  text-align: left;
   cursor: pointer; }
 
 h2 {
@@ -192,8 +193,9 @@ button:active {
   width: 100%;
   position: fixed;
   top: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   background: #2B2B00;
   z-index: 10;
@@ -203,8 +205,6 @@ button:active {
     width: auto;
     height: auto;
     max-height: 9.5rem; }
-  .header__publication-title {
-    text-align: center; }
   .header__menu {
     text-align: right;
     list-style-type: none; }
@@ -249,7 +249,11 @@ button:active {
     font-size: 2rem;
     line-height: 1.2em;
     margin-bottom: 0.5em; }
+  .section__main--list {
+    max-width: 1000px;
+    margin: 20px auto; }
   .section__main--list.random {
+    max-width: 100%;
     list-style-type: none;
     height: calc(100vh - 240px);
     display: grid;

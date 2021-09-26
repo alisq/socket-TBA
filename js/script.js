@@ -131,6 +131,7 @@ $("input[type=checkbox]").change(function(){
  $(".section__book-menu .popout__close").click(function(){
 
      $(".section__book-menu").fadeOut(200)
+     $(".section__book-content").removeClass("active");
     })
 
 
@@ -149,6 +150,7 @@ $(document).on("click",".popout__pub",function(){
     $(document).keyup(function(e) {
       if (e.key === "Escape") { // escape key maps to keycode `27`
         $(".section__book-menu").fadeOut(200)
+        $(".section__book-content").removeClass("active")
      }
      
 

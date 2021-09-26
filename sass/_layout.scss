@@ -22,8 +22,13 @@
         margin-bottom:0.5em;
         
     }
+    &--list {
+        max-width: 1000px;
+        margin: 20px auto;
+    }
     &--list.random {
-
+        max-width:100%;
+        
         list-style-type:none;
         height:calc(100vh - 240px);
         display:grid;
