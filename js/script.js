@@ -13,7 +13,7 @@ let pages = [];
       
 
       $(".preamble--text").html(j[0].body)
-      $(".preamble--cover").fadeIn(200)
+      //$(".preamble--cover").fadeIn(200)
   pages = [...j]
   //console.log(pages)
 
@@ -39,7 +39,7 @@ fetch(url)
     
 p.splice(1,1)
 p.splice(2,1)
-console.log(p)
+
 for(i=0;i<p.length;i++) {
   p[i].identity = i;
     
@@ -165,7 +165,7 @@ $(document).on("click",".popout__pub",function(){
     $(".section__book-content").addClass("active")
 
     $("input[type=checkbox]").each(function(){
-      console.log("fire")
+      
       AC = "#book-article-"+$(this).data("nid");
       if ($(this).is(':checked')) {
         $(AC).addClass("active");
@@ -257,7 +257,7 @@ $(document).on("click",".see-footnote",function(e){
   e.preventDefault();
   fn = "#"+$(this).attr("id").replace("ref","");
 
-  console.log($(fn).position().top)
+  
   $(document).scrollTo("100%", 200)
   // footnoteref2_jqc03ke
   // footnote1_ptp15bx
