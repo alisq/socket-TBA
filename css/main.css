@@ -381,7 +381,7 @@ button:active {
 #lostRiversMap {
   width: 80vw;
   border: 1px solid #000;
-  min-height: 80vh;
+  min-height: 70vh;
   position: relative;
   left: calc((80vw - 82rem) / 2 * -1);
   margin-bottom: 1em; }
