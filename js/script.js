@@ -12,13 +12,14 @@ url = 'https://tba.codepanel.in/json/biblio/';
         
         
         if (!(j[i].field_artist_s_ in biblio)==0) {
-          console.log(j[i])
-          biblio[j[i].field_artist_s_].push(j[i])
+          j[i].nid != j[i-1].nid ? biblio[j[i].field_artist_s_].push(j[i]) : null;
+          
       } else {
         biblio[j[i].field_artist_s_] = [j[i]];
       }
       
     }
+    co
       
     });
       
@@ -163,14 +164,14 @@ $("input[type=checkbox]").change(function(){
     c = ""
     for (var key of Object.keys(biblio)) {
       
-      c += '<h2>'+key+'</h2>';
+      c += '<h3>'+key+'</h3>';
       for (i=0;i<biblio[key].length;i++) {
         c+=('<li>'+biblio[key][i].body+'</li>')
       }
   }
 
     let popout = `
-    <div class='popout' id='popout__${this.nid}'>
+    <div class='popout' id='popout__bibliography'>
         <div class="popout__menu">
         <div class="popout__pub" data-nid="${this.nid}"><img class="popout__menu--img" src="img/book.svg">
         </div>
