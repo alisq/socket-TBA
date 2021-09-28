@@ -2,6 +2,28 @@
 let order= [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
 shuffle(order);
 
+let biblio = {};
+
+url = 'https://tba.codepanel.in/json/biblio/';
+    fetch(url)
+  .then(response => response.json())
+    .then(j => {
+      for (i=0;i<j.length;i++) {
+        
+        
+        if (!(j[i].field_artist_s_ in biblio)==0) {
+          console.log(j[i])
+          biblio[j[i].field_artist_s_].push(j[i])
+      } else {
+        biblio[j[i].field_artist_s_] = [j[i]];
+      }
+      
+    }
+      
+    });
+      
+
+
 let pages = [];
   
     url = 'https://tba.codepanel.in/json/pages/';
@@ -105,6 +127,14 @@ $("input[type=checkbox]").change(function(){
 
     })
 
+    $(".biblio-item").click(function(){
+      //console.log(pages);
+      
+      loadBiblio();
+      history.pushState('',"bibliography", window.location.pathname+'#bibliography');
+
+    })
+
 
 
   function loadText(identity) {
@@ -124,6 +154,51 @@ $("input[type=checkbox]").change(function(){
           $("body").append(page.displayFull)
       }
     }
+  }
+
+
+  function loadBiblio() {
+
+
+    c = ""
+    for (var key of Object.keys(biblio)) {
+      
+      c += '<h2>'+key+'</h2>';
+      for (i=0;i<biblio[key].length;i++) {
+        c+=('<li>'+biblio[key][i].body+'</li>')
+      }
+  }
+
+    let popout = `
+    <div class='popout' id='popout__${this.nid}'>
+        <div class="popout__menu">
+        <div class="popout__pub" data-nid="${this.nid}"><img class="popout__menu--img" src="img/book.svg">
+        </div>
+            <div class="popout__close">&times;</div>
+        </div>
+        
+        <div class="popout__interior">
+        
+              <div class="popout__interior--grid">    
+          <div class="popout__interior--grid-left">
+           
+          <h2>Bibliography
+          
+          </h2>
+    
+              <br /><br />
+              ${c}
+            </div>
+            <div class="popout__interior--grid-right">
+            
+          </div>
+          </div>
+        </div>
+    </div>
+    `
+
+    $("body").append(popout)
+    
   }
 
 
@@ -252,6 +327,9 @@ $(document).on("click","h1",function(){
   }
   
 })
+
+
+
 
 $(document).on("click",".see-footnote",function(e){
   e.preventDefault();
