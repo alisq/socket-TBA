@@ -19,7 +19,7 @@ url = 'https://tba.codepanel.in/json/biblio/';
       }
       
     }
-    co
+    
       
     });
       
@@ -132,7 +132,8 @@ $("input[type=checkbox]").change(function(){
       //console.log(pages);
       
       loadBiblio();
-      history.pushState('',"bibliography", window.location.pathname+'#bibliography');
+      //history.pushState('bibliography',"bibliography", '#bibliography');
+      history.pushState('',"title", window.location.pathname+'#biblio');
 
     })
 
@@ -150,7 +151,7 @@ $("input[type=checkbox]").change(function(){
       if (parseInt(pages[i].nid) === nid) {
           page = new Page(pages[i]);
           
-          history.pushState('',page.title, window.location.pathname+'#'+page.nid);
+          //history.pushState('',page.title, window.location.pathname+'#'+page.nid);
 
           $("body").append(page.displayFull)
       }

@@ -69,7 +69,7 @@ class Page {
             </div>
         </div>
         `
-        history.pushState('',title, window.location.pathname+'#'+this.nid);
+        //history.pushState('',title, window.location.pathname+'#'+this.nid);
 
         return popout;
     }
