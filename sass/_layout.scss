@@ -256,3 +256,39 @@ margin-top:1em;
     font-family:burgess;
     text-indent:-1.2em;
 }
+
+@media (max-width:1000px) {
+
+    .popout {
+        top: 150px;
+
+        &__menu {
+            top:18rem;
+        }
+        &__menu--img {
+            display:none;
+        }
+
+        &__interior {
+            padding:0 1rem;
+        }
+    }
+
+    
+    .section__main--list.random {
+    
+    & .placeholder {
+        display:none;
+    }
+
+    &.random {
+        display:block;
+
+        & li {
+            padding:0.5em;
+        }
+    }
+
+
+    }
+}

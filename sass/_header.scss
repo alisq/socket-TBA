@@ -31,3 +31,15 @@
         }
    }
 }
+
+@media (max-width:1000px) {
+    .header {
+        text-align:center;
+        position:static;
+        display:block;
+
+        &__menu {
+            display:none;
+        }
+    }   
+}

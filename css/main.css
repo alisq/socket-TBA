@@ -212,6 +212,14 @@ button:active {
       display: inline-block;
       margin-left: 2rem; }
 
+@media (max-width: 1000px) {
+  .header {
+    text-align: center;
+    position: static;
+    display: block; }
+    .header__menu {
+      display: none; } }
+
 .footer {
   width: 100%;
   position: fixed;
@@ -233,6 +241,11 @@ button:active {
     .footer__menu li {
       display: inline-block;
       margin-left: 2rem; }
+
+@media (max-width: 1000px) {
+  .footer {
+    position: static;
+    display: block; } }
 
 #defaultCanvas0 {
   position: fixed;
@@ -395,6 +408,22 @@ button:active {
   line-height: 1.2;
   font-family: burgess;
   text-indent: -1.2em; }
+
+@media (max-width: 1000px) {
+  .popout {
+    top: 150px; }
+    .popout__menu {
+      top: 18rem; }
+    .popout__menu--img {
+      display: none; }
+    .popout__interior {
+      padding: 0 1rem; }
+  .section__main--list.random .placeholder {
+    display: none; }
+  .section__main--list.random.random {
+    display: block; }
+    .section__main--list.random.random li {
+      padding: 0.5em; } }
 
 .📖-root {
   color: black; }
