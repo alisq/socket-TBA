@@ -10,6 +10,8 @@
    //border-top:1px solid rgba($white,0.3);
 
 
+
+
    &__tba img{
     //    text-align:left;
        max-width: 100%;
@@ -35,5 +37,61 @@
     .footer {
         position:static;
         display:block;
+
+
+        &__tba {
+            position:relative;
+            z-index:10;
+            width:80%;
+           }
+
+        &__menu {
+            position:fixed;
+            bottom:-260px;
+            width:100%;
+            transition:all 0.4s;
+            // background:$green;
+        }
+
+        &__menu.active {
+            position:fixed;
+            bottom:0;
+            width:100%;
+            // background:$green;
+        }
+
+        &__menu::before {
+            
+            display:inline-block;
+            position:relative;
+            z-index:9999;
+            margin:1em;
+            
+            width:30px;
+            height:30px;
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 21%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 61%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
+            content:' ';
+        }
+
+        &__menu:hover::before {
+            cursor:pointer;
+          
+            background: $yellow;
+            background: linear-gradient(0deg, rgba($yellow,1) 0%, rgba($yellow,1) 21%, rgba($yellow,0) 21%, rgba($yellow,0) 40%, rgba($yellow,1) 41%, rgba($yellow,1) 60%, rgba($yellow,0) 61%, rgba($yellow,0) 80%, rgba($yellow,1) 81%, rgba($yellow,1) 100%);
+            
+        }
+
+        &__menu li {
+            margin:0;
+            display:block;
+            text-align:left;
+            width:100%;
+            background:$green;
+            padding:0.5em 1em 0.5em 0em;
+            border-bottom:1px solid rgba($white,0.6);
+            position:relative;
+            z-index:11;
+        }
     }
 }

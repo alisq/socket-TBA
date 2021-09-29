@@ -83,6 +83,10 @@ for(i=0;i<p.length;i++) {
 }
 
 
+$(".footer__menu").click(function(){
+  $(this).toggleClass("active");
+})
+
 
   
 //ADD LIST CLICK

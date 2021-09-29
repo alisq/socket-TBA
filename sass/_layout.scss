@@ -260,7 +260,7 @@ margin-top:1em;
 @media (max-width:1000px) {
 
     .popout {
-        top: 150px;
+        top: 110px;
 
         &__menu {
             top:18rem;
@@ -274,6 +274,9 @@ margin-top:1em;
         }
     }
 
+    .section__main {
+        margin:0 0 10vh 0 ;
+    }
     
     .section__main--list.random {
     
