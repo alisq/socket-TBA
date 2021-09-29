@@ -195,6 +195,7 @@ button:active {
   font-variation-settings: 'bloo' 0; }
 
 #popout__67 h4 {
+  line-height: 1.2;
   border-top: 1px solid #2B2B00;
   margin-top: 0.75em;
   padding-top: 0.75em; }
