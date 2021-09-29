@@ -97,6 +97,10 @@ h5 {
 h2, h3, h4, p {
   margin-bottom: 1.5rem; }
 
+.speaker {
+  font-weight: bold;
+  color: #CC9B2C; }
+
 .popout {
   color: #2B2B00; }
 
@@ -158,6 +162,7 @@ h2, h3, h4, p {
   line-height: 1.2em;
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 0.5em;
   margin-bottom: 1.5rem; }
 
 label {
@@ -188,6 +193,23 @@ button:hover {
 
 button:active {
   font-variation-settings: 'bloo' 0; }
+
+#popout__67 h4 {
+  border-top: 1px solid #2B2B00;
+  margin-top: 0.75em;
+  padding-top: 0.75em; }
+
+.index-label {
+  font-size: 1em;
+  display: inline-block;
+  width: 12rem;
+  vertical-align: top; }
+
+.index-label2 {
+  font-size: 1em;
+  display: inline-block;
+  display: inline-block;
+  width: calc(100% - 13rem); }
 
 .header {
   width: 100%;
@@ -446,6 +468,9 @@ button:active {
   font-family: burgess;
   text-indent: -1.2em; }
 
+audio {
+  width: 100%; }
+
 @media (max-width: 1000px) {
   .popout {
     top: 110px; }
@@ -465,7 +490,9 @@ button:active {
       padding: 0.5em; } }
 
 .📖-root {
-  color: black; }
+  color: black;
+  font-size: 16px;
+  line-height: 1.2em; }
   .📖-root .📖-left .📖-running-header,
   .📖-root .📖-right .📖-running-header {
     right: auto !important;
@@ -483,6 +510,13 @@ button:active {
   .📖-root h5 {
     animation: none !important;
     font-variation-settings: "bloo" 200 !important; }
+  .📖-root p,
+  .📖-root .editorial--author {
+    margin: 16pt 72pt; }
+  .📖-root .caption {
+    margin: 8pt 72pt 16pt; }
+  .📖-root img {
+    max-height: 360px; }
   .📖-root .popout__interior--biography, .📖-root .📖-root .footnotes {
     width: 100%; }
 

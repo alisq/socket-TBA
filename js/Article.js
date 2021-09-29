@@ -8,6 +8,7 @@ class Article {
         this.artists = content.field_artist_s_;
         this.title = content.title;
         this.bio = content.body;
+        this.audio = content.field_audio_files.split(", ");
         this.image = content.field_image.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");
         this.image_caption = $(this.image).attr('alt');
         if (this.image_caption == undefined) {
@@ -63,6 +64,8 @@ class Article {
 
 
     get displayFull() {
+
+        console.log(this.audio)
 
 
         let title =  this.title+" — "+this.artists;

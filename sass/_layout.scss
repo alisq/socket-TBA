@@ -257,6 +257,34 @@ margin-top:1em;
     text-indent:-1.2em;
 }
 
+audio { width:100%; }
+audio::-webkit-media-controls-volume-slider {
+    
+}
+
+// audio::-webkit-media-controls-panel
+
+// audio::-webkit-media-controls-mute-button
+
+// audio::-webkit-media-controls-play-button
+
+// audio::-webkit-media-controls-timeline-container
+
+// audio::-webkit-media-controls-current-time-display
+
+// audio::-webkit-media-controls-time-remaining-display
+
+// audio::-webkit-media-controls-timeline
+
+// audio::-webkit-media-controls-volume-slider-container
+
+
+
+// audio::-webkit-media-controls-seek-back-button
+
+// audio::-webkit-media-controls-seek-forward-button
+
+
 @media (max-width:1000px) {
 
     .popout {

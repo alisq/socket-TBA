@@ -138,6 +138,11 @@ h5 {
 h2, h3, h4, p {
   margin-bottom:1.5rem;
 }
+
+.speaker {
+  font-weight: bold;
+  color: $yellow;
+}
 .popout {
   color:$green;
 }
@@ -224,6 +229,7 @@ h2, h3, h4, p {
   line-height:1.2em;
   text-align:center;
   font-size:1.5rem;
+  margin-top:0.5em;
   margin-bottom:1.5rem;
 }
 
@@ -265,4 +271,26 @@ button:hover {
 
 button:active {
   font-variation-settings: 'bloo' 0;
+}
+
+
+#popout__67 h4 {
+  border-top: 1px solid $green;
+  margin-top: 0.75em;
+  padding-top: 0.75em;
+}
+
+.index-label {
+  font-size: 1em;
+  display: inline-block;
+  width: 12rem;
+  vertical-align: top;
+}
+
+.index-label2 {
+  font-size: 1em;
+  display: inline-block;
+  
+    display: inline-block;
+    width: calc(100% - 13rem);
 }

@@ -65,6 +65,7 @@ p.splice(2,1)
 
 for(i=0;i<p.length;i++) {
   p[i].identity = i;
+  
     
   let item = new Article(p[i]);
 
@@ -128,7 +129,7 @@ $("input[type=checkbox]").change(function(){
       //console.log(pages);
       
       loadPage($(this).data("nid"))
-      history.pushState('',"title", window.location.pathname+'#'+$(this).data("nid"));
+      //history.pushState('',"title", window.location.pathname+'#'+$(this).data("nid"));
 
     })
 
@@ -366,3 +367,14 @@ function shuffle(array) {
   return array;
 }
 
+// setTimeout(function(){
+//   // $(".page-item-make-book").click()
+//   // $('input[type="checkbox"]').prop('checked', false); // Unchecks it
+//   // $("#book-link-6").prop('checked',true)
+
+//   $(".section__book-content").addClass("active");
+//   $(".section__book-content--article").removeClass("active");
+//   $("#book-article-57").addClass("active");
+//   //$("#make-book").click()
+  
+// },1000);

@@ -17,7 +17,7 @@ $(document).on("click","#make-book",function(){
       
 
       let breakRule = Bindery.PageBreak({
-        selector: 'h2',
+        selector: 'h2aaaaa',
         position: 'before',
       });
       
@@ -34,7 +34,7 @@ $(document).on("click","#make-book",function(){
           pageSetup: {
             size: { width: '8.5in', height: '11in' },
             
-            margin: { top: '36pt', inner: '108pt', outer: '108pt', bottom: '36pt' },
+            margin: { top: '72pt', inner: '0pt', outer: '0pt', bottom: '36pt' },
           },
         
         });
