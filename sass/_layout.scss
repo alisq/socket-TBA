@@ -18,7 +18,7 @@
 
     & li { 
         font-size:2rem;
-        line-height:1.2em;
+        line-height:1.3em;
         margin-bottom:0.5em;
         
     }
@@ -45,7 +45,6 @@
             // font-size:0.66666em;
             cursor:pointer;
             padding:1em;
-            line-height:1.05em;
             //border:1px solid white;
 
             &:hover {
@@ -81,6 +80,7 @@
 
         & img {
             width:5rem;
+            display:none;
         }
         
 
@@ -88,7 +88,7 @@
             display:inline-block;
 
             &:hover {
-                color:$white;
+                color:$yellow;
     
                 
             }
@@ -154,6 +154,11 @@
         font-weight: 100;
         cursor:pointer;
         z-index:99;
+
+        &:hover,
+        &:active {
+            color:$yellow!important;
+        }
     }
 }
 

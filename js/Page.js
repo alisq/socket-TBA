@@ -33,11 +33,12 @@ class Page {
 
 
         let title =  this.title;
-        console.log(title)
+        
         $("title").text(title)
 
         $(".popout").remove();
-        console.log(this.nid)
+        
+        history.pushState('',"title", window.location.pathname+'#page-'+this.nid);
 
         /* html */
        let popout = `
@@ -69,7 +70,8 @@ class Page {
             </div>
         </div>
         `
-        history.pushState('dddddd',title, window.location.pathname+'#dddd'+this.nid);
+        
+        
 
         return popout;
     }

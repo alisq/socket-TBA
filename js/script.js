@@ -121,15 +121,22 @@ $("input[type=checkbox]").change(function(){
 
 //UPON PAGE LOAD CLICK ON APPROPRIATE LINK BASED ON URL HASH
   if (window.location.hash != '') {
-    l = window.location.hash.replace("#","#link-");
-    $(l).click();
+    l = "#link-"+window.location.hash.split("-")[1];
+    console.log(l)
+    setTimeout(function(){
+      $(l).click();
+    },200)
+    
   }
 
-    $(".page-item").click(function(){
+    $(".page-item").click(function(e){
+      e.preventDefault();
       //console.log(pages);
       
       loadPage($(this).data("nid"))
-      //history.pushState('',"title", window.location.pathname+'#'+$(this).data("nid"));
+      
+      
+
 
     })
 

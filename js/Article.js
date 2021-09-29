@@ -70,7 +70,7 @@ class Article {
 
         let title =  this.title+" — "+this.artists;
         $("title").text(title)
-        history.pushState('',title, window.location.pathname+'#'+this.nid);
+        history.pushState('',title, window.location.pathname+'#text-'+this.nid);
 
         $(".popout").remove();
 
