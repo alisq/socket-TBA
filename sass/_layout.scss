@@ -32,7 +32,7 @@
         list-style-type:none;
         height:calc(100vh - 240px);
         display:grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
         
         & .placeholder {
@@ -129,7 +129,7 @@
     top:0;
     left:0;
     z-index:20;
-    background:rgba($black,0.9);
+    background:rgba($green,0.9);
     color:white;
     // display:flex;   
     // justify-content: center;
@@ -142,7 +142,7 @@
         top:50%;
         left:50%;
         transform:translate(-50%,-50%);
-        line-height:1.5em;
+        line-height:1.8em;
         max-width:1000px;
     }    
 

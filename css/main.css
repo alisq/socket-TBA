@@ -212,6 +212,14 @@ button:active {
   display: inline-block;
   width: calc(100% - 13rem); }
 
+.author {
+  font-family: Burgess;
+  font-size: 1.0em; }
+
+.article-list {
+  font-size: 3.2rem !important;
+  line-height: 4rem; }
+
 .header {
   width: 100%;
   position: fixed;
@@ -331,7 +339,7 @@ button:active {
     list-style-type: none;
     height: calc(100vh - 240px);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr); }
     .section__main--list.random .placeholder {
       display: block; }
@@ -380,7 +388,7 @@ button:active {
   top: 0;
   left: 0;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(43, 43, 0, 0.9);
   color: white;
   display: none; }
   .section__book-menu--interior {
@@ -388,7 +396,7 @@ button:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    line-height: 1.5em;
+    line-height: 1.8em;
     max-width: 1000px; }
   .section__book-menu .popout__close {
     position: fixed;

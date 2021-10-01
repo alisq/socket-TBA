@@ -19,7 +19,7 @@ class Article {
     }
 
     get displayList() {
-        let item = `<li class="article-list" data-item='${this.identity}' id='link-${this.nid}' data-nid='${this.nid}'>${this.artists}<br />${this.title}</li>`
+        let item = `<li class="article-list" data-item='${this.identity}' id='link-${this.nid}' data-nid='${this.nid}'><span class="author">${this.artists}</span><br />${this.title}</li>`
         return item;
     }
 
@@ -88,7 +88,7 @@ class Article {
                   <div class="popout__interior--grid">    
               <!-- <div class="popout__interior--grid-left"> -->
 
-              <h2>${this.artists}<br />
+              <h2><span class="author">${this.artists}</span><br />
               ${this.title}</h2>
 
               <div class="editorial">

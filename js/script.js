@@ -382,6 +382,6 @@ function shuffle(array) {
 //   $(".section__book-content").addClass("active");
 //   $(".section__book-content--article").removeClass("active");
 //   $("#book-article-57").addClass("active");
-//   //$("#make-book").click()
+//   $("#make-book").click()
   
 // },1000);
