@@ -26,6 +26,8 @@ L.tileLayer(
 
 
 $("#garrisonMap").click(function(){
+    $(".active").removeClass("active")
+    $(this).addClass("active")
      //map.removeLayer(markers);
 
 for (var i=0; i<garrisonMap.length; i++) {
@@ -77,7 +79,7 @@ for (var i=0; i<garrisonMap.length; i++) {
   
     //  allMarkers.push(marker)
   
-  }
+  } 
   map.addLayer(markers)
 
    
