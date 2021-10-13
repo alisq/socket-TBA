@@ -39,7 +39,13 @@ for (var i=0; i<garrisonMap.length; i++) {
     allLocations.push(garrisonMap[i])
 
     var mLocation = new L.LatLng(ll[0], ll[1]);
-        var m = new L.Marker(mLocation);
+        var m = new L.Marker(mLocation).on('click', function(e){
+            $(".info").removeClass("active")
+            targetInfo = "#map-sidebar-item-"+e.target._id;
+            $(targetInfo).addClass("active")
+            $("#map-sidebar").scrollTo(targetInfo,200)
+        });
+        m._id = garrisonMap[i]._id;
 
         polyLine.push(mLocation)
         boundsArray.push(mLocation)
@@ -53,6 +59,8 @@ for (var i=0; i<garrisonMap.length; i++) {
                 
 
         `
+
+        $("#map-sidebar").append(`<li class="info" id="map-sidebar-item-${garrisonMap[i]._id}">${popupContent}</li>`)
   
 
         /* html */
@@ -72,7 +80,7 @@ for (var i=0; i<garrisonMap.length; i++) {
         $("#list__stops").append(listContent);
 
 
-    m.bindPopup(popupContent,   {maxWidth : 560});
+    //m.bindPopup(popupContent,   {maxWidth : 560});
 
     markers.addLayer(m)
     
