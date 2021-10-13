@@ -61,7 +61,7 @@ fetch(url)
     
     
 p.splice(1,1)
-p.splice(2,1)
+//p.splice(2,1)
 
 for(i=0;i<p.length;i++) {
   p[i].identity = i;

@@ -13,9 +13,9 @@ let map = L.map('map', {
     zoom: 13,
     maxZoom: 24
   });
-
+  
 L.tileLayer(
-    'https://api.mapbox.com/styles/v1/iamasq/cksp237zq0wc017mg4vxumsw3/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaWFtYXNxIiwiYSI6ImNrc296bmRvaDAxMGkydnBsNGcwMzQwdGcifQ.PkRl94Sjs9H2IM0auw-zdg', {
+    'https://api.mapbox.com/styles/v1/iamasq/ckupu32t50q5h14qkkmmewdvi/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaWFtYXNxIiwiYSI6ImNrc296bmRvaDAxMGkydnBsNGcwMzQwdGcifQ.PkRl94Sjs9H2IM0auw-zdg', {
         tileSize: 512,
         zoom:25,
         zoomOffset: -1,

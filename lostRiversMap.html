@@ -30,10 +30,15 @@
                 height:100%;
             }
 
+            #map-area {
+                display:grid;
+                grid-template-columns:2fr 1fr;
+            }
+
 
             #map {
                 width:100%;
-                height:80vh;
+                height:90vh;
             }
 
             #map-menu {
@@ -77,10 +82,13 @@
     <body>
         <nav id="map-menu">
             <button class="map-menu-item" id="garrisonMap">Garrison Creek</button>
-            <button class="map-menu-item">Humber River</button>
-            <button class="map-menu-item">Lower Don</button>
+            <button class="map-menu-item">Etobicoke Creek</button>
+            <button class="map-menu-item">Don River</button>
         </nav>
+        <div id="map-area">
         <div id="map"></div>
+        <div id="map-sidebar"></div>
+    </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/garrison-map.json"></script>
         <script src="js/map.js"></script>
