@@ -190,8 +190,11 @@
 
 
     &--illustration {
-        width:60%;
-        position:relative;
+        width: 100%;
+        left: -8em;
+        transform-origin: 0em 105%;
+        transform: scale(1.6);
+        position: relative;
         background-size: contain;
         background-position: bottom;
         background-repeat: no-repeat;

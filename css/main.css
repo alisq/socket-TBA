@@ -421,7 +421,10 @@ button:active {
   .editorial--content {
     padding-bottom: 5vh; }
   .editorial--illustration {
-    width: 60%;
+    width: 100%;
+    left: -8em;
+    transform-origin: 0em 105%;
+    transform: scale(1.6);
     position: relative;
     background-size: contain;
     background-position: bottom;

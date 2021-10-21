@@ -4,6 +4,7 @@ class Article {
         this.identity = content.identity;
         this.contents = content.field_article_contents.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");;
         this.editorial_author = content.field_intro_text_author;
+        this.editorial_illustration = content.field_editorial_image;
         this.editorial = content.field_editorial;
         this.artists = content.field_artist_s_;
         this.title = content.title;
@@ -92,7 +93,7 @@ class Article {
               ${this.title}</h2>
 
               <div class="editorial">
-                    <div class="editorial--illustration" style="background-image:url('${"img/editorial--illustration"+Math.floor(Math.random()*2)+".png"}')" />
+                    <div class="editorial--illustration" style="background-image:url('https://tba.codepanel.in/${this.editorial_illustration}')" />
                     </div>
                     <div class="editorial--content">
                         ${this.editorial}
