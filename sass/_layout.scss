@@ -112,6 +112,18 @@
                 font-size:0.8em;
             }
         }
+
+        &--biography {
+
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid $green;
+
+    & p {
+        width:50%;
+    }
+
+        }
     }
 }
 
@@ -265,6 +277,16 @@ margin-top:1em;
 audio { width:100%; }
 audio::-webkit-media-controls-volume-slider {
     
+}
+
+#borsato__grid {
+    display: grid;
+    grid-template-columns: 2.94fr 2fr;
+    grid-column-gap: 1em;
+}
+
+#borsato__grid img {
+    margin-bottom:1em;
 }
 
 // audio::-webkit-media-controls-panel

@@ -134,8 +134,7 @@ h2, h3, h4, p {
 .footnotes {
   font-size: 1.7rem;
   line-height: 2rem;
-  font-family: 'burgess';
-  width: 50%; }
+  font-family: 'burgess'; }
 
 .footnotes {
   margin-left: 50%; }
@@ -376,6 +375,12 @@ button:active {
     margin: 3rem auto 20rem; }
     .popout__interior--grid-right {
       font-size: 0.8em; }
+    .popout__interior--biography {
+      margin-top: 1em;
+      padding-top: 1em;
+      border-top: 1px solid #2B2B00; }
+      .popout__interior--biography p {
+        width: 50%; }
 
 .lead__image {
   margin-bottom: 5vw; }
@@ -481,6 +486,14 @@ button:active {
 
 audio {
   width: 100%; }
+
+#borsato__grid {
+  display: grid;
+  grid-template-columns: 2.94fr 2fr;
+  grid-column-gap: 1em; }
+
+#borsato__grid img {
+  margin-bottom: 1em; }
 
 @media (max-width: 1000px) {
   .popout {
