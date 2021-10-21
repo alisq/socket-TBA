@@ -102,7 +102,7 @@ for (var i=0; i<garrisonMap.length; i++) {
     
 
 
-   bounds = new L.LatLngBounds(boundsArray);
+  let  bounds = new L.LatLngBounds(boundsArray);
   map.fitBounds(bounds)
   console.log(markers._layers[47])
     
