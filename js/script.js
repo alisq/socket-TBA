@@ -32,11 +32,11 @@ let pages = [];
   .then(response => response.json())
     .then(j => {
       
-
+      console.log(j)
       
 
-      $(".preamble--text").html(j[0].body)
-      //$(".preamble--cover").fadeIn(200)
+      $(".preamble--text").html(j[1].body)
+      $(".preamble--cover").fadeIn(200)
   pages = [...j]
   //console.log(pages)
 
