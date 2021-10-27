@@ -1,6 +1,6 @@
 
 let order= [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-shuffle(order);
+shuffleArray(order);
 
 let biblio = {};
 
@@ -71,7 +71,7 @@ fetch(url)
     
     
     
-p.splice(1,1)
+//p.splice(1,1)
 //p.splice(2,1)
 
 for(i=0;i<p.length;i++) {
@@ -359,15 +359,15 @@ $(document).on("click","h1",function(){
 $(document).on("click",".see-footnote",function(e){
   e.preventDefault();
   fn = "#"+$(this).attr("id").replace("ref","");
-
   
-  $(document).scrollTo("100%", 200)
+  
+  $(".popout").scrollTo(fn, 1200)
   // footnoteref2_jqc03ke
   // footnote1_ptp15bx
 })
 
 
-function shuffle(array) {
+function shuffleArray(array) {
   let currentIndex = array.length,  randomIndex;
 
   // While there remain elements to shuffle...

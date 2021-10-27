@@ -60,12 +60,14 @@
 }
 
 .popout {
-    position:absolute;
-    top:60px;
+    position:fixed;
+    top:100px;
     background:$white;
     z-index:5;
     width:100%;
-    min-height:100vh;
+    height:calc(100vh - 180px);
+    overflow-y:scroll;
+    // min-height:100vh;
     // color:$black;
 
     &__menu {
@@ -191,7 +193,7 @@
 
     &--illustration {
         width: 100%;
-        left: -8em;
+        left: -9em;
         transform-origin: 0em 105%;
         transform: scale(1.6);
         position: relative;
@@ -349,6 +351,19 @@ audio::-webkit-media-controls-volume-slider {
         }
     }
 
+
+.editorial {
+    
+    grid-template-columns:1fr;
+
+    &--illustration {
+        width: 80vw;
+        height: 50vw;
+        position:static;
+        transform:none;
+} }
+
+
     .section__main {
         margin:0 0 10vh 0 ;
     }
@@ -358,6 +373,14 @@ audio::-webkit-media-controls-volume-slider {
     & .placeholder {
         display:none;
     }
+
+
+    .popout__interior--biography p { width:auto;}
+
+    .footnotes {
+        margin-left: 14%;
+    }
+
 
     &.random {
         display:block;

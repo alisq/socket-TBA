@@ -349,12 +349,13 @@ button:active {
         color: #CC9B2C; }
 
 .popout {
-  position: absolute;
-  top: 60px;
+  position: fixed;
+  top: 100px;
   background: #FFF;
   z-index: 5;
   width: 100%;
-  min-height: 100vh; }
+  height: calc(100vh - 180px);
+  overflow-y: scroll; }
   .popout__menu {
     position: fixed;
     right: 1rem;
@@ -423,7 +424,7 @@ button:active {
     padding-bottom: 5vh; }
   .editorial--illustration {
     width: 100%;
-    left: -8em;
+    left: -9em;
     transform-origin: 0em 105%;
     transform: scale(1.6);
     position: relative;
@@ -525,10 +526,21 @@ audio {
       display: none; }
     .popout__interior {
       padding: 0 1rem; }
+  .editorial {
+    grid-template-columns: 1fr; }
+    .editorial--illustration {
+      width: 80vw;
+      height: 50vw;
+      position: static;
+      transform: none; }
   .section__main {
     margin: 0 0 10vh 0; }
   .section__main--list.random .placeholder {
     display: none; }
+  .section__main--list.random .popout__interior--biography p {
+    width: auto; }
+  .section__main--list.random .footnotes {
+    margin-left: 14%; }
   .section__main--list.random.random {
     display: block; }
     .section__main--list.random.random li {

@@ -10,10 +10,10 @@ class Fungus {
 
       // values common to all Fungus objects
       this.angleChangeAmt = radians(2);
-      this.speed =          0.5;
+      this.speed =          0.2;
 
       this.chanceSplit =    0.175;
-      this.splitAngle =     radians(16);
+      this.splitAngle =     radians(24);
 
     // passed in from the arguments
     this.x =     x;
@@ -26,8 +26,8 @@ class Fungus {
     this.angle = angle || random(0, TWO_PI);
 
     // variables updated every frame
-      this.distFromCenter;
-      this.maxDistance = 750+random(400);
+      // this.distFromCenter;
+      // this.maxDistance = 1750+random(400);
       
       this.age = 0;
   }
@@ -38,8 +38,8 @@ class Fungus {
     // increase age of this tendril
     this.age += 1;
  
-    // calculate the distance from the center of the sketch
-    this.distFromCenter = 100;
+    // // calculate the distance from the center of the sketch
+    // this.distFromCenter = 100;
     
     // move in a random direction
     this.angle += random(-this.angleChangeAmt, this.angleChangeAmt);
