@@ -15,6 +15,7 @@ class Article {
         if (this.image_caption == undefined) {
             this.image_caption="";
         }
+        this.bookSafeContents = this.contents.replaceAll('<iframe id="lostRiversMap" src="lostRiversMap.html" title="Lost Rivers Map"></iframe>',"").replaceAll('<iframe id="taguibaoMap" scrolling="no" src="taguibaoMap.html" title="Caitlyn Taguibao Interactive Mural"></iframe>',"")
         
       
     }
@@ -52,7 +53,7 @@ class Article {
                             </div>
                         </div>
 
-                        ${this.contents}
+                        ${this.bookSafeContents}
                                             
                         <div class="popout__interior--biography">
                             ${this.bio}
@@ -79,8 +80,7 @@ class Article {
        let popout = `
         <div class='popout' id='popout__${this.nid}'>
             <div class="popout__menu">
-                <div class="popout__pub" data-nid="${this.nid}"><img class="popout__menu--img" src="img/book.svg">
-                </div>
+                <!-- <div class="popout__pub" data-nid="${this.nid}"><img class="popout__menu--img" src="img/book.svg"></div>-->
                 <div class="popout__close">&times;</div>
             </div>
             
