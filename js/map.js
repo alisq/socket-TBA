@@ -3,7 +3,7 @@ let allLocations = [];
 let boundsArray = [];
   // setup a marker group
   var markers = L.layerGroup();
-console.log(garrisonMap)
+//console.log(garrisonMap)
 
 
 

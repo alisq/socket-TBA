@@ -9,7 +9,7 @@ Build out of RANDOM GROWTH by Jeff Thompson | 2019/20 | jeffreythompson.org
 
 
 
-let maxAge = 600;          // tendrils older than this will
+let maxAge = 1600;          // tendrils older than this will
                            // be removed – try changing!
 
 
@@ -36,7 +36,7 @@ function setup() {
 
   setTimeout(function(){
     $(".article-list").each(function(){
-        points.push({x:$(this).position().left,y:$(this).position().top})
+        points.push({x:$(this).position().left+100,y:$(this).position().top+100})
     })
 
 
