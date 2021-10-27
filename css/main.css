@@ -61,7 +61,7 @@ a:hover,
 a:active {
   color: #CC9B2C; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, bloom {
   font-weight: normal;
   animation: breathe 10000ms infinite both; }
 
