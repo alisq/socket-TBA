@@ -222,7 +222,9 @@ button:active {
 
 @media (max-width: 1000px) {
   h1 {
-    font-size: 1.75em; } }
+    font-size: 1.75em; }
+  .author {
+    font-size: 0.7em; } }
 
 .header {
   width: 100%;
@@ -286,7 +288,7 @@ button:active {
       display: none; }
     .footer__menu {
       position: fixed;
-      bottom: -260px;
+      bottom: -240px;
       width: 100%;
       transition: all 0.4s; }
     .footer__menu.active {
@@ -303,6 +305,23 @@ button:active {
       background: white;
       background: linear-gradient(0deg, white 0%, white 21%, rgba(255, 255, 255, 0) 21%, rgba(255, 255, 255, 0) 40%, white 41%, white 60%, rgba(255, 255, 255, 0) 61%, rgba(255, 255, 255, 0) 80%, white 81%, white 100%);
       content: ' '; }
+    .footer__menu.active::before {
+      display: inline-block;
+      position: relative;
+      z-index: 9999;
+      margin: 1em;
+      width: 30px;
+      height: 30px;
+      content: "\d7";
+      background: none;
+      color: #FFF;
+      font-size: 3em;
+      position: relative;
+      top: 20px;
+      left: 40px; }
+    .footer__menu.active:hover::before {
+      background: none;
+      color: #CC9B2C; }
     .footer__menu:hover::before {
       cursor: pointer;
       background: #CC9B2C;

@@ -48,7 +48,7 @@
 
         &__menu {
             position:fixed;
-            bottom:-260px;
+            bottom:-240px;
             width:100%;
             transition:all 0.4s;
             // background:$green;
@@ -73,6 +73,28 @@
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 21%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 61%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
             content:' ';
+        }
+
+        &__menu.active::before {
+            display: inline-block;
+            position: relative;
+            z-index: 9999;
+            margin: 1em;
+            width: 30px;
+            height: 30px;
+            content: "\d7";
+            background: none;
+            color: $white;
+            font-size: 3em;
+            position: relative;
+            top: 20px;
+            left:40px;
+        }
+
+        &__menu.active:hover::before {
+            background: none;
+            color: $yellow;;
+            
         }
 
         &__menu:hover::before {
