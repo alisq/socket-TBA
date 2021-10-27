@@ -20,6 +20,11 @@
         font-size:2rem;
         line-height:1.3em;
         margin-bottom:0.5em;
+        cursor:pointer;
+
+        &:hover {
+            color:$yellow;
+        }
         
     }
     &--list {

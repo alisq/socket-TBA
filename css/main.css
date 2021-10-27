@@ -329,7 +329,10 @@ button:active {
   .section__main li {
     font-size: 2rem;
     line-height: 1.3em;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    cursor: pointer; }
+    .section__main li:hover {
+      color: #CC9B2C; }
   .section__main--list {
     max-width: 1000px;
     margin: 20px auto; }
