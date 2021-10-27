@@ -218,7 +218,7 @@
 
 .preamble {
     &--cover {
-        // display:none;
+    display:none;
     position:fixed;
     background:rgba($green,0.6);
     width:100vw;
@@ -246,7 +246,7 @@
     text-align:center; 
     width:100%;
     max-width:800px;
-    
+    display:none;
     top:50%; left:50%;
     transform:translate(-50%,-50%)
         
