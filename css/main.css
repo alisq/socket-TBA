@@ -513,7 +513,8 @@ audio {
   #sponsor-grid .sponsor-grid-3-col {
     grid-column: span 3; }
   #sponsor-grid .sponsor-grid-2-col {
-    grid-column: span 2; }
+    grid-column: span 2;
+    margin-bottom: 1em; }
 
 @media (max-width: 1000px) {
   .popout {
