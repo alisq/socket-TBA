@@ -165,6 +165,7 @@ $("input[type=checkbox]").change(function(){
   function loadText(identity) {
       article = new Article(p[identity]);      
       $("body").append(article.displayFull);
+      $(document).scrollTop(0)
   }
 
   function loadPage(nid) {
