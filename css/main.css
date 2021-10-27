@@ -82,7 +82,8 @@ h3 {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 0.02;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.3; }
 
 h4 {
   margin-top: 2em;
@@ -227,7 +228,6 @@ button:active {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #2B2B00;
   z-index: 10;
   height: 10rem; }
   .header__tba img {
@@ -257,7 +257,6 @@ button:active {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 3rem 1rem;
-  background: #2B2B00;
   z-index: 10; }
   .footer__tba img {
     max-width: 100%;
@@ -522,7 +521,10 @@ audio {
 
 @media (max-width: 1000px) {
   .popout {
-    top: 110px; }
+    position: absolute;
+    top: 140px;
+    height: auto;
+    overflow-y: hidden; }
     .popout__menu {
       top: 18rem; }
     .popout__menu--img {

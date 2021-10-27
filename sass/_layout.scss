@@ -342,8 +342,11 @@ audio::-webkit-media-controls-volume-slider {
 @media (max-width:1000px) {
 
     .popout {
-        top: 110px;
-
+        position:absolute;
+        top: 140px;
+        height:auto;
+        overflow-y:hidden;
+        // height:calc(100vh-110px);
         &__menu {
             top:18rem;
         }
