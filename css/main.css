@@ -86,7 +86,8 @@ h3 {
 
 h4 {
   margin-top: 2em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  line-height: 1.3em; }
 
 h5 {
   font-size: 40vw;
@@ -499,6 +500,20 @@ audio {
 
 #borsato__grid img {
   margin-bottom: 1em; }
+
+#sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center; }
+  #sponsor-grid img {
+    display: block;
+    margin: auto; }
+  #sponsor-grid .sponsor-grid-6-col {
+    grid-column: span 6; }
+  #sponsor-grid .sponsor-grid-3-col {
+    grid-column: span 3; }
+  #sponsor-grid .sponsor-grid-2-col {
+    grid-column: span 2; }
 
 @media (max-width: 1000px) {
   .popout {
