@@ -220,6 +220,10 @@ button:active {
   font-size: 3.2rem !important;
   line-height: 4rem; }
 
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.75em; } }
+
 .header {
   width: 100%;
   position: fixed;
