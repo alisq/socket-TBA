@@ -18,7 +18,7 @@
 
     & li { 
         list-style-type: none;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 1.15em;
         margin-bottom: 0.25em;
         cursor: pointer;
@@ -51,7 +51,7 @@
             //width:30rem;
             // font-size:0.66666em;
             cursor:pointer;
-            padding:1em;
+            padding:0.5em;
             //border:1px solid white;
 
             &:hover {
@@ -360,7 +360,7 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:$mobileMin) {
 
    #lostRiversMap,
    #taguibaoMap {

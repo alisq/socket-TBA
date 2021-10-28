@@ -217,10 +217,10 @@ button:active {
   font-size: 0.8em; }
 
 .article-list {
-  font-size: 3.2rem !important;
+  font-size: 2.75rem !important;
   line-height: 4rem; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   h1 {
     font-size: 1.75em; }
   .author {
@@ -249,7 +249,7 @@ button:active {
       display: inline-block;
       margin-left: 2rem; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .header {
     text-align: center;
     position: static;
@@ -279,7 +279,7 @@ button:active {
       display: inline-block;
       margin-left: 2rem; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .footer {
     position: static;
     display: block; }
@@ -352,7 +352,7 @@ button:active {
     display: none; }
   .section__main li {
     list-style-type: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.15em;
     margin-bottom: 0.25em;
     cursor: pointer;
@@ -373,7 +373,7 @@ button:active {
       display: block; }
     .section__main--list.random li {
       cursor: pointer;
-      padding: 1em; }
+      padding: 0.5em; }
       .section__main--list.random li:hover {
         color: #CC9B2C; }
 
@@ -559,7 +559,7 @@ audio {
 .hide-when-big {
   display: none; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   #lostRiversMap,
   #taguibaoMap {
     width: 100vw;

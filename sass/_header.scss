@@ -33,7 +33,7 @@
    }
 }
 
-@media (max-width:1000px) {
+@media (max-width:$mobileMin) {
     .header {
         text-align:center;
         position:static;

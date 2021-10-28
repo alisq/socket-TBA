@@ -306,12 +306,12 @@ button:active {
 } 
 
 .article-list {
-  font-size: 3.2rem!important;
+  font-size: 2.75rem!important;
   line-height: 4rem;
 }
 
 
-@media (max-width:1000px) { 
+@media (max-width:$mobileMin) { 
 
 
   h1 {

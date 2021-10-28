@@ -34,7 +34,7 @@
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:$mobileMin) {
     .footer {
         position:static;
         display:block;
