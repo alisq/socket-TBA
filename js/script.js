@@ -4,7 +4,7 @@ shuffleArray(order);
 
 let biblio = {};
 
-url = 'https://tba.codepanel.in/json/biblio/';
+url = '../json/biblio.json';
     fetch(url)
   .then(response => response.json())
     .then(j => {
@@ -27,7 +27,7 @@ url = 'https://tba.codepanel.in/json/biblio/';
 
 let pages = [];
   
-    url = 'https://tba.codepanel.in/json/pages/';
+    url = '../json/pages.json';
     fetch(url)
   .then(response => response.json())
     .then(j => {
@@ -63,7 +63,7 @@ let pages = [];
   
   
   
-  url = 'https://tba.codepanel.in/json/articles';
+  url = '../json/articles.json';
 fetch(url)
   .then(response => response.json())
   .then(p => {
