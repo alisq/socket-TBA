@@ -104,6 +104,8 @@ class Article {
         
                 
                   ${this.contents}
+
+                  <img src="/img/leaf_1.png" class="article__tombstone"/>
                 <!-- </div>
                 <div class="popout__interior--grid-right">-->
                 <div class="popout__interior--biography">

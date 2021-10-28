@@ -497,6 +497,9 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.article__tombstone {
+  margin: 5vh auto; }
+
 #lostRiversMap,
 #taguibaoMap {
   width: 80vw;
@@ -542,7 +545,17 @@ audio {
     grid-column: span 2;
     margin-bottom: 1em; }
 
+.hide-when-big {
+  display: none; }
+
 @media (max-width: 1000px) {
+  #lostRiversMap,
+  #taguibaoMap {
+    width: 100vw;
+    min-height: 80vh;
+    left: -1em; }
+  .hide-when-big {
+    display: block; }
   .popout {
     position: absolute;
     top: 140px;

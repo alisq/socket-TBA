@@ -57,11 +57,17 @@ for (var i=1; i<stops.length; i++) {
   allLocations.push(stops[i])
 
   var mLocation = new L.LatLng(ll[0], ll[1]);
-      var m = new L.CircleMarker(mLocation, {color: "#CC9B2C", weight: 4}).on('click', function(e){
+      var m = new L.CircleMarker(mLocation, {color: "#CC9B2C", weight: 4,fillColor: 'green'}).on('click', function(e){
           $(".info").removeClass("active")
           targetInfo = "#map-sidebar-item-"+e.target._id;
           $(targetInfo).addClass("active")
           $("#map-sidebar").scrollTo(targetInfo,200)
+      })
+      
+      m.on('mouseover',function(ev) {
+        this.setStyle({weight: 8});
+      }).on('mouseout',function(ev) {
+        this.setStyle({weight: 4});
       });
       m._id = stops[i]._id;
 
@@ -110,9 +116,9 @@ let firstpolyline = new L.Polyline(polyLine, {
   smoothFactor: 1
 
   });
-map.addLayer(markers)
+
 map.addLayer(firstpolyline);
-console.log(firstpolyline)
+map.addLayer(markers)
   
 
 

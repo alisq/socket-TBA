@@ -262,6 +262,10 @@
    
 }
 
+.article__tombstone {
+    margin:5vh auto;
+}
+
 
 #lostRiversMap,
 #taguibaoMap {
@@ -337,9 +341,22 @@ audio::-webkit-media-controls-volume-slider {
  
 }
 
+.hide-when-big {
+    display:none;
+}
 
 
 @media (max-width:1000px) {
+
+   #lostRiversMap,
+   #taguibaoMap {
+    width: 100vw;
+    min-height: 80vh;
+    left: -1em;
+   }
+    .hide-when-big {
+        display:block;
+    }
 
     .popout {
         position:absolute;
