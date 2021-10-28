@@ -178,6 +178,7 @@ $("input[type=checkbox]").change(function(){
           //history.pushState('',page.title, window.location.pathname+'#'+page.nid);
 
           $("body").append(page.displayFull)
+          $(document).scrollTop(0)
       }
     }
   }
