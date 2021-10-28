@@ -2,7 +2,7 @@ class Page {
     constructor(content) {
         this.nid = content.nid;
         this.identity = content.identity;
-        this.contents = content.body.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");;
+        this.contents = content.body;
         //this.editorial = content.field_editorial;
         //this.artists = content.field_artist_s_;
 

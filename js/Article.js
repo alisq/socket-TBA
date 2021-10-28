@@ -2,7 +2,7 @@ class Article {
     constructor(content) {
         this.nid = content.nid;
         this.identity = content.identity;
-        this.contents = content.field_article_contents.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");;
+        this.contents = content.field_article_contents;
         this.editorial_author = content.field_intro_text_author;
         this.editorial_illustration = content.field_editorial_image;
         this.editorial = content.field_editorial;
@@ -10,7 +10,7 @@ class Article {
         this.title = content.title;
         this.bio = content.body;
         this.audio = content.field_audio_files.split(", ");
-        this.image = content.field_image.replaceAll("/sites/default/files","https://tba.codepanel.in/sites/default/files");
+        this.image = content.field_image;
         this.image_caption = $(this.image).attr('alt');
         if (this.image_caption == undefined) {
             this.image_caption="";
@@ -93,7 +93,7 @@ class Article {
               ${this.title}</h2>
 
               <div class="editorial">
-                    <div class="editorial--illustration" style="background-image:url('https://tba.codepanel.in/${this.editorial_illustration}')" />
+                    <div class="editorial--illustration" style="background-image:url('${this.editorial_illustration}')" />
                     </div>
                     <div class="editorial--content">
                         ${this.editorial}
