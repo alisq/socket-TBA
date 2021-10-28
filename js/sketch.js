@@ -9,13 +9,14 @@ Build out of RANDOM GROWTH by Jeff Thompson | 2019/20 | jeffreythompson.org
 
 
 
-let maxAge = 1600;          // tendrils older than this will
+let maxAge = 1000;          // tendrils older than this will
                            // be removed – try changing!
 
 
 
 let fungi;                 // list of objects
 
+let f = 0;
 
 
 function setup() {
@@ -65,6 +66,12 @@ function setup() {
 
 function draw() {
   
+    f++;
+
+    if (f > 3000) {
+      setup();
+      f=0;
+    } 
   
     for (let i=fungi.length-1; i>=0; i-=1) {
       
