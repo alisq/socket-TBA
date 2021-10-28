@@ -363,9 +363,19 @@ $(document).on("click",".see-footnote",function(e){
   
   
   $(".popout").scrollTo(fn, 1200)
-  // footnoteref2_jqc03ke
-  // footnote1_ptp15bx
+  
 })
+
+
+
+$(document).on("click",".footnote",function(e){
+  e.preventDefault();
+  fn = "#"+$(this).attr("id").replace("footnote","footnoteref");
+  $(".popout").scrollTo(fn, 1200)
+  
+})
+
+
 
 
 function shuffleArray(array) {

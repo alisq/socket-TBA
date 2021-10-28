@@ -61,7 +61,7 @@ class Fungus {
   
   // not much here, all the work is done above!
   display() {    
-    stroke(255,255,255, 100);
+    stroke(255,255,255, 40);
     line(this.prevX, this.prevY, this.x, this.y);
   }
 }

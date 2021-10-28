@@ -17,7 +17,7 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
         <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
-
+        <link rel="stylesheet" href="/css/main.css">
         <style>
             
             * {
@@ -28,7 +28,20 @@
             html, body {
                 width:100%;
                 height:100%;
+                font-size:20px;
+                line-height:1.25;
             }
+
+            a:link,
+            a:visited {
+                color:black;
+            }
+
+
+            button {
+                border-radius:0;
+            }
+
 
             #map-area {
                 display:grid;
@@ -42,7 +55,7 @@
             }
 
             #map-sidebar {
-                
+                font-family:'roboto';
                 height:90vh;
                 overflow:scroll;
             }
@@ -59,6 +72,7 @@
                 color:white;
                 border:none;
                 font-size:1.5em;
+                
                 padding:0.5rem;
                 cursor:pointer;
                 height:10vh
@@ -90,8 +104,11 @@
                 list-style-type:none;
                 color:#4b4b00;
                 transition:opacity 0.2s;
+                border-top:1px solid #4b4b00;
 
             }
+
+           
 
             .info h4,
             .info p {
@@ -108,7 +125,7 @@
         <nav id="map-menu">
             <button class="map-menu-item" id="garrisonMap">Garrison Creek</button>
             <button class="map-menu-item">Etobicoke Creek</button>
-            <button class="map-menu-item">Don River</button>
+            <button class="map-menu-item" id="lowerDonMap">Don River</button>
         </nav>
         <div id="map-area">
         <div id="map"></div>
@@ -118,6 +135,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
 
         <script type="text/javascript" src="/js/garrison-map.json"></script>
+        <script type="text/javascript" src="/js/lowerdon-map.json"></script>
         <script src="js/map.js"></script>
     </body>
 </html>
