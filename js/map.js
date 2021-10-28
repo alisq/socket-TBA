@@ -11,7 +11,7 @@ let boundsArray = [];
 let map = L.map('map', {
     center: [43.6514794,-79.4860513],
     zoom: 13,
-    maxZoom: 24
+    maxZoom: 54
   });
   
 L.tileLayer(
@@ -55,7 +55,7 @@ for (var i=0; i<stops.length; i++) {
   allLocations.push(stops[i])
 
   var mLocation = new L.LatLng(ll[0], ll[1]);
-      var m = new L.CircleMarker(mLocation, {color: "#CC9B2C"}).on('click', function(e){
+      var m = new L.CircleMarker(mLocation, {color: "#CC9B2C", weight: 4}).on('click', function(e){
           $(".info").removeClass("active")
           targetInfo = "#map-sidebar-item-"+e.target._id;
           $(targetInfo).addClass("active")
