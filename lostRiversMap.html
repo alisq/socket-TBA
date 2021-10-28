@@ -62,8 +62,18 @@
             #map-sidebar {
                 font-family:'roboto';
                 height:89vh;
-                overflow:scroll;
+                overflow-y:scroll;
             }
+
+            #map-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#map-sidebar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
             #map-menu {
                 display:grid;
