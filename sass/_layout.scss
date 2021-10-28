@@ -17,10 +17,12 @@
 
 
     & li { 
-        font-size:2rem;
-        line-height:1.3em;
-        margin-bottom:0.5em;
-        cursor:pointer;
+        list-style-type: none;
+        font-size: 1.75rem;
+        line-height: 1.15em;
+        margin-bottom: 0.25em;
+        cursor: pointer;
+        padding: 0;
 
         &:hover {
             color:$yellow;

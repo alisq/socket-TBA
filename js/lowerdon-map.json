@@ -27,19 +27,19 @@ lowerDonMap = [
     <div class='caption'>
     Listen to Nicholas Power reading from “a larger river” (2014). Courtesy of the author.</div>
     
-    <p>Nicholas Power, “a larger river” (Reading the Don, 2014)</p>
+    <p>Nicholas Power, “a larger river” (<em>Reading the Don</em>, 2014)</p>
      <p>
-     &#9;“let’s stand where trees stood in the water<br />
-     &#9;&#9;         where Toronto can be a word for how to catch fish<br />
-     &#9;&#9;        where salmon find a place to lay their eggs<br />
-     &#9;&#9;       where the cries of birds can still awaken the unknown in all of us<br />
-     &#9;    where we can be grateful for the changing course of the river<br />
-     &#9;where we don’t right the river 	the river writes us<br />
+     &nbsp;&nbsp;“let’s stand where trees stood in the water<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;         where Toronto can be a word for how to catch fish<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;        where salmon find a place to lay their eggs<br />
+     &nbsp;&nbsp;&nbsp;&nbsp;       where the cries of birds can still awaken the unknown in all of us<br />
+     &nbsp;&nbsp;    where we can be grateful for the changing course of the river<br />
+     &nbsp;&nbsp;where we don’t right the river &nbsp;&nbsp;&nbsp;&nbsp; the river writes us<br />
     let’s linger where we can learn about time by standing by a river<br />
-    &#9;    let’s praise the watercourse not bury it”   
+    &nbsp;&nbsp;    let’s praise the watercourse not bury it”   
         </p> 
     `,"place":"LatLng(43.667678, -79.354925)","_id":"01"},
-{"stop_title":"Poetry Reading","stop_content":`
+{"stop_title":"Through the Park","stop_content":`
     
     <p><img src='img/lostrivers/river-poets-read.jpg'></p>
     <div class='caption'>
@@ -155,12 +155,10 @@ lowerDonMap = [
 {"stop_title":"At Riverdale Park West","stop_content":`<p>
     At Riverdale Park West, we reached Maria Thereza Alves’s temporary public sculpture Phantom Pain (2019) which traced the course of the Don River’s natural flow.
     </p>
-    <p>
-    insert TBA_MariaTherezaAlves_RiverdaleParkWest_02 
-    </p>
+    
     <p><img src='img/lostrivers/TBA_MariaTherezaAlves_RiverdaleParkWest_02.jpg'></p>
     <div class='caption'>
-    Maria Thereza Alves, Phantom Pain, 2019, public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the <a href='https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves' target='_blank'>Short Format podcast series</a>. 
+    Maria Thereza Alves, <em>Phantom Pain</em>, 2019, public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the <a href='https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves' target='_blank'>Short Format podcast series</a>. 
     </div>
     
     `,"place":"LatLng(43.666439, -79.359404)","_id":"04"},
