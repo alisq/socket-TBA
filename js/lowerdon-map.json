@@ -19,11 +19,11 @@ lowerDonMap = [
         <p>We gathered at St Matthews Clubhouse on Broadview Avenue for a welcome and Land Acknowledgement: “So we're actually going to start with the land acknowledgments, and I'd like to know who in this group knows what the land acknowledgment is. Almost everybody whoa, whoa,... we've come a way. Yeah! Honestly, I was in a group the other week, literally no one had ever heard of it. So, this is refreshing. We acknowledge Toronto as a gathering place for many people of Turtle Island who recognize the long history of First Nations people in Ontario and show respect today to the ones that return the city and back the Mississauga's of the credits and the Chippewa—also transplants of trying to get rid of that big echo of what's going on. The territory was a subject with a dish with one spoon wampum belt covenant's agreement between the Iroquois Confederacy and the Ojibwe and allied nations to peaceably care for and share the resources around the Great Lakes. This territory is also covered by the Upper Canada treaties.</p>
     <p>Who's heard of the dish with one spoon? Wow. What I usually say here, especially if there are lots of immigrants in the group, which would include me, is that when you become a Canadian citizen, it's important to know that you've actually signed on to the treaties and that we all become treaty people as we become Canadian citizens and sign on to the duty of caring for and sharing the land. Today, Toronto is home to many indigenous people from across Turtle Island or North America, and we are grateful to be here. Chi-miigwech.” (Helen Mills)</p>
     <p><insert Helen WelcomeHelen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya.</p>
-    <p><img src='/img/lostrivers/helen-welcome.jpg'></p>
+    <p><img src='img/lostrivers/helen-welcome.jpg'></p>
     <div class='caption'>Helen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya</div>`,"place":"LatLng(43.667692, -79.35378)","_id":"00"},
 {"stop_title":"Riverdale Park East","stop_content":`<p>Moving down the hill into Riverdale Park East, we heard from the River Poets.</p>
 
-    <audio controls src='/audio/Nicholas Power_Don River_a larger river.m4a'></audio>
+    <audio controls src='audio/Nicholas Power_Don River_a larger river.m4a'></audio>
     <div class='caption'>
     Listen to Nicholas Power reading from “a larger river” (2014). Courtesy of the author.</div>
     
@@ -41,11 +41,11 @@ lowerDonMap = [
     `,"place":"LatLng(43.667678, -79.354925)","_id":"01"},
 {"stop_title":"Poetry Reading","stop_content":`
     
-    <p><img src='/img/lostrivers/river-poets-read.jpg'></p>
+    <p><img src='img/lostrivers/river-poets-read.jpg'></p>
     <div class='caption'>
     River Poets Read River Poets share their writing along the route with the group (2019). Photo by Chiedza Pasipanodya.
     </div>
-    <audio controls src='/audio/Maureen Hynes_Crossing at Dawn Ed.m4a'></audio>
+    <audio controls src='audio/Maureen Hynes_Crossing at Dawn Ed.m4a'></audio>
 
     <div class='caption'>
     Listen to Maureen Hynes read an excerpt from “Crossing at Dawn” (2014). Courtesy of the author.
@@ -74,7 +74,7 @@ lowerDonMap = [
     The island that skaters used to rest on in winter.”
     </p>
     
-    <audio controls src='/audio/Dilys Leman_On River Fishing ed.m4a'></audio>
+    <audio controls src='audio/Dilys Leman_On River Fishing ed.m4a'></audio>
 
     <div class='caption'>
     Listen to Dilys Leman read an excerpt from “On River Fishing: Advice to Women, 1908” (2019). Courtesy of the author.
@@ -106,7 +106,7 @@ lowerDonMap = [
 {"stop_title":"Crossing the bridge","stop_content":`<p>Crossing the bridge over the Don River towards Riverdale Park West, we observed the straightened path of the waterway.
     </p>
 
-    <audio controls src='/audio/Anita Lahey_Don River_Crossingsrexcerpt.mp3'></audio>
+    <audio controls src='audio/Anita Lahey_Don River_Crossingsrexcerpt.mp3'></audio>
 
     <div class='caption'>
     Listen to Anita Lahey reading an excerpt from “Don River, Crossings and Expeditions” (2015). Courtesy of the author.
@@ -158,7 +158,7 @@ lowerDonMap = [
     <p>
     insert TBA_MariaTherezaAlves_RiverdaleParkWest_02 
     </p>
-    <p><img src='/img/lostrivers/TBA_MariaTherezaAlves_RiverdaleParkWest_02.jpg'></p>
+    <p><img src='img/lostrivers/TBA_MariaTherezaAlves_RiverdaleParkWest_02.jpg'></p>
     <div class='caption'>
     Maria Thereza Alves, Phantom Pain, 2019, public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the <a href='https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves' target='_blank'>Short Format podcast series</a>. 
     </div>
@@ -168,7 +168,7 @@ lowerDonMap = [
     As a final act, we walked the sculpture, tracing the Don’s ancient path with our bodies and a run of paper salmon. 
     </p>
 
-    <audio controls src='/audio/Maureen S Harris_Don River_Be the River.m4a'></audio>
+    <audio controls src='audio/Maureen S Harris_Don River_Be the River.m4a'></audio>
     
     <div class='caption'>
     Listen to Maureen Scott Harris reading an excerpt from “Be the River” (2015). Courtesy of the author.
@@ -188,7 +188,7 @@ lowerDonMap = [
     which pushes against its surface smoothing <br />
     or ruffing, snatching for something.”
     </p>
-    <p><img src='/img/lostrivers/walking-along-the-sculpture.jpg'></p>
+    <p><img src='img/lostrivers/walking-along-the-sculpture.jpg'></p>
     <div class='caption'>
     Poets and participants walk along Maria Thereza Alves’s Phantom Pain (2019), carrying handmade paper salmon. Photo by Chiedza Pasipanodya.
     </div>

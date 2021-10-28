@@ -508,13 +508,13 @@ button:active {
 
 #lostRiversMap,
 #taguibaoMap {
-  width: calc(100% + 20em);
   border: 1px solid #000;
   min-height: 70vh;
   position: relative;
   margin-bottom: 1em;
-  margin-left: -10em;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0; }
 
 #popout__bibliography h2 {
   margin-top: 1em; }

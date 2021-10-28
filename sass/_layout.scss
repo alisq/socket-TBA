@@ -276,14 +276,17 @@
 
 #lostRiversMap,
 #taguibaoMap {
-    width: calc(100% + 20em);
+    //width: calc(100% + 20em);
     border:1px solid #000;
     min-height:70vh;
     position:relative;
     // left: calc((80vw - 82rem) / 2 * -1);
     margin-bottom:1em;
-    margin-left:-10em;
+    //margin-left:-10em;
     overflow:hidden;
+
+    width:100%;
+    margin-left:0;
  
 }
 #popout__bibliography h2 {
