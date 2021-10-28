@@ -4,7 +4,7 @@ let boundsArray = [];
   // setup a marker group
   var markers = L.layerGroup();
 //console.log(garrisonMap)
-
+let allStopsGroup = L.layerGroup();
 
 
 
@@ -45,12 +45,14 @@ $("#lowerDonMap").click(function(){
 
 
 function loadStops(stops) {
+  $("#map-sidebar").empty();
+  markers.clearLayers();  
+  boundsArray = [];
+  polyLine = [];
 
 for (var i=0; i<stops.length; i++) {
   var ll = (stops[i].place.replace("LatLng(","").replace(")","").split(","))
-  // var lon = stops[i][0];
-  // var lat = stops[i][1];
-  // var popupText = stops[i][2];
+  
   
   allLocations.push(stops[i])
 
@@ -96,17 +98,11 @@ for (var i=0; i<stops.length; i++) {
       $("#list__stops").append(listContent);
 
 
-  //m.bindPopup(popupContent,   {maxWidth : 560});
-
   markers.addLayer(m)
   
 
-  //  allMarkers.push(marker)
-
 } 
-map.addLayer(markers)
 
- 
 let firstpolyline = new L.Polyline(polyLine, {
   color: '#CC9B2C',
   weight: 3,
@@ -114,7 +110,9 @@ let firstpolyline = new L.Polyline(polyLine, {
   smoothFactor: 1
 
   });
-  map.addLayer(firstpolyline);
+map.addLayer(markers)
+map.addLayer(firstpolyline);
+console.log(firstpolyline)
   
 
 

@@ -1,33 +1,41 @@
 lowerDonMap = [
-    {"stop_title":"St Matthews Clubhouse","stop_content":`<p>We gathered at St Matthews Clubhouse on Broadview Avenue for a welcome and Land Acknowledgement: “So we're actually going to start with the land acknowledgments, and I'd like to know who in this group knows what the land acknowledgment is. Almost everybody whoa, whoa,... we've come a way. Yeah! Honestly, I was in a group the other week, literally no one had ever heard of it. So, this is refreshing. We acknowledge Toronto as a gathering place for many people of Turtle Island who recognize the long history of First Nations people in Ontario and show respect today to the ones that return the city and back the Mississauga's of the credits and the Chippewa—also transplants of trying to get rid of that big echo of what's going on. The territory was a subject with a dish with one spoon wampum belt covenant's agreement between the Iroquois Confederacy and the Ojibwe and allied nations to peaceably care for and share the resources around the Great Lakes. This territory is also covered by the Upper Canada treaties.</p>
+    {"stop_title":"St Matthews Clubhouse","stop_content":`
+        
+        
+        <p>We gathered at St Matthews Clubhouse on Broadview Avenue for a welcome and Land Acknowledgement: “So we're actually going to start with the land acknowledgments, and I'd like to know who in this group knows what the land acknowledgment is. Almost everybody whoa, whoa,... we've come a way. Yeah! Honestly, I was in a group the other week, literally no one had ever heard of it. So, this is refreshing. We acknowledge Toronto as a gathering place for many people of Turtle Island who recognize the long history of First Nations people in Ontario and show respect today to the ones that return the city and back the Mississauga's of the credits and the Chippewa—also transplants of trying to get rid of that big echo of what's going on. The territory was a subject with a dish with one spoon wampum belt covenant's agreement between the Iroquois Confederacy and the Ojibwe and allied nations to peaceably care for and share the resources around the Great Lakes. This territory is also covered by the Upper Canada treaties.</p>
     <p>Who's heard of the dish with one spoon? Wow. What I usually say here, especially if there are lots of immigrants in the group, which would include me, is that when you become a Canadian citizen, it's important to know that you've actually signed on to the treaties and that we all become treaty people as we become Canadian citizens and sign on to the duty of caring for and sharing the land. Today, Toronto is home to many indigenous people from across Turtle Island or North America, and we are grateful to be here. Chi-miigwech.” (Helen Mills)</p>
     <p><insert Helen WelcomeHelen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya.</p>
-    <p>insert Helen Welcome
-    Helen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya
-    </p>`,"place":"LatLng(43.667692, -79.35378)","_id":"00"},
+    <p><img src='/img/lostrivers/helen-welcome.jpg'></p>
+    <div class='caption'>Helen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya</div>`,"place":"LatLng(43.667692, -79.35378)","_id":"00"},
 {"stop_title":"Riverdale Park East","stop_content":`<p>Moving down the hill into Riverdale Park East, we heard from the River Poets.</p>
 
-    <p>insert audio Nicholas Power_Don River_a larger river<br />
-    Listen to Nicholas Power reading from “a larger river” (2014). Courtesy of the author.</p>
+    <audio controls src='/audio/Nicholas Power_Don River_a larger river.m4a'></audio>
+    <div class='caption'>
+    Listen to Nicholas Power reading from “a larger river” (2014). Courtesy of the author.</div>
     
     <p>Nicholas Power, “a larger river” (Reading the Don, 2014)</p>
      <p>
-            “let’s stand where trees stood in the water<br />
-              where Toronto can be a word for how to catch fish<br />
-                where salmon find a place to lay their eggs<br />
-               where the cries of birds can still awaken the unknown in all of us<br />
-            where we can be grateful for the changing course of the river<br />
-       where we don’t right the river 	the river writes us<br />
+     &#9;“let’s stand where trees stood in the water<br />
+     &#9;&#9;         where Toronto can be a word for how to catch fish<br />
+     &#9;&#9;        where salmon find a place to lay their eggs<br />
+     &#9;&#9;       where the cries of birds can still awaken the unknown in all of us<br />
+     &#9;    where we can be grateful for the changing course of the river<br />
+     &#9;where we don’t right the river 	the river writes us<br />
     let’s linger where we can learn about time by standing by a river<br />
-        let’s praise the watercourse not bury it”   
+    &#9;    let’s praise the watercourse not bury it”   
         </p> 
     `,"place":"LatLng(43.667678, -79.354925)","_id":"01"},
-{"stop_title":"Poetry Reading","stop_content":`<p>
-    insert River Poets Read River Poets share their writing along the route with the group (2019). Photo by Chiedza Pasipanodya.
-    </p>
-    <p>
-    insert audio Maureen Hynes_Crossing at Dawn Ed Listen to Maureen Hynes read an excerpt from “Crossing at Dawn” (2014). Courtesy of the author.
-    </p>
+{"stop_title":"Poetry Reading","stop_content":`
+    
+    <p><img src='/img/lostrivers/river-poets-read.jpg'></p>
+    <div class='caption'>
+    River Poets Read River Poets share their writing along the route with the group (2019). Photo by Chiedza Pasipanodya.
+    </div>
+    <audio controls src='/audio/Maureen Hynes_Crossing at Dawn Ed.m4a'></audio>
+
+    <div class='caption'>
+    Listen to Maureen Hynes read an excerpt from “Crossing at Dawn” (2014). Courtesy of the author.
+    </div>
     <p>
     Maureen Hynes, “Crossing at Dawn” (2014)
     </p>
@@ -51,9 +59,14 @@ lowerDonMap = [
     who carried boxes of explosives, one by one, downhill.<br />
     The island that skaters used to rest on in winter.”
     </p>
-    <p>
-    insert audio Dilys Leman_On River Fishing ed Listen to Dilys Leman read an excerpt from “On River Fishing: Advice to Women, 1908” (2019). Courtesy of the author.
-    </p>
+    
+    <audio controls src='/audio/Dilys Leman_On River Fishing ed.m4a'></audio>
+
+    <div class='caption'>
+    Listen to Dilys Leman read an excerpt from “On River Fishing: Advice to Women, 1908” (2019). Courtesy of the author.
+    </div>
+
+
     <p>
     ​​Dilys Leman, “On River Fishing: Advice to Women, 1908” (2019)
     </p>
@@ -78,9 +91,12 @@ lowerDonMap = [
     </p>`,"place":"LatLng(43.667825, -79.356566)","_id":"02"},
 {"stop_title":"Crossing the bridge","stop_content":`<p>Crossing the bridge over the Don River towards Riverdale Park West, we observed the straightened path of the waterway.
     </p>
-    <p>
-    insert poem audio Anita Lahey_Don River_Crossingsrexcerpt Listen to Anita Lahey reading an excerpt from “Don River, Crossings and Expeditions” (2015). Courtesy of the author.>
-    </p>
+
+    <audio controls src='/audio/Anita Lahey_Don River_Crossingsrexcerpt.mp3'></audio>
+
+    <div class='caption'>
+    Listen to Anita Lahey reading an excerpt from “Don River, Crossings and Expeditions” (2015). Courtesy of the author.
+    </div>
     <p>
     Anita Lahey, “Don River, Crossings and Expeditions” (2015)
     </p>
@@ -115,20 +131,34 @@ lowerDonMap = [
     to be channelled and dredged.”
     </p>
     <p>
-    insert Don straightening 2 “The Don Improvement Plan (1886-1891) saw the meandering Lower River straightened, widened, and deepened, dramatically transforming the landscape and hydrology of the marshy lower valley.” Jennifer Bonnell, "The Don Narrows”. https://maps.library.utoronto.ca/dvhmp/don-narrows.html
+    
+    
+    <div class='caption'>
+    “The Don Improvement Plan (1886-1891) saw the meandering Lower River straightened, widened, and deepened, dramatically transforming the landscape and hydrology of the marshy lower valley.” Jennifer Bonnell, “<a href='https://maps.library.utoronto.ca/dvhmp/don-narrows.html' target='_blank'>The Don Narrows</a>”. 
+    </div>
+    
     </p>`,"place":"LatLng(43.667575, -79.357958)","_id":"03"},
 {"stop_title":"At Riverdale Park West","stop_content":`<p>
     At Riverdale Park West, we reached Maria Thereza Alves’s temporary public sculpture Phantom Pain (2019) which traced the course of the Don River’s natural flow.
     </p>
     <p>
-    insert TBA_MariaTherezaAlves_RiverdaleParkWest_02 Maria Thereza Alves, Phantom Pain, 2019, public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the Short Format podcast series https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves. 
-    </p>`,"place":"LatLng(43.666439, -79.359404)","_id":"04"},
+    insert TBA_MariaTherezaAlves_RiverdaleParkWest_02 
+    </p>
+    <p><img src='/img/lostrivers/TBA_MariaTherezaAlves_RiverdaleParkWest_02.jpg'></p>
+    <div class='caption'>
+    Maria Thereza Alves, Phantom Pain, 2019, public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the <a href='https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves' target='_blank'>Short Format podcast series</a>. 
+    </div>
+    
+    `,"place":"LatLng(43.666439, -79.359404)","_id":"04"},
 {"stop_title":"tracing the Don’s ancient path","stop_content":`<p>
     As a final act, we walked the sculpture, tracing the Don’s ancient path with our bodies and a run of paper salmon. 
     </p>
-    <p>
-    insert poem audio Maureen S Harris_Don River_Be the River Listen to Maureen Scott Harris reading an excerpt from “Be the River” (2015). Courtesy of the author.>
-    </p>
+
+    <audio controls src='/audio/Maureen S Harris_Don River_Be the River.m4a'></audio>
+    
+    <div class='caption'>
+    Listen to Maureen Scott Harris reading an excerpt from “Be the River” (2015). Courtesy of the author.
+    </div>
     <p>
     ​​Maureen Scott Harris, “Be the River” (2000)
     </p>
@@ -144,8 +174,10 @@ lowerDonMap = [
     which pushes against its surface smoothing <br />
     or ruffing, snatching for something.”
     </p>
-    <p>
-    insert Walking along the sculpture Poets and participants walk along Maria Thereza Alves’s Phantom Pain (2019), carrying handmade paper salmon. Photo by Chiedza Pasipanodya.
-    </p>`,"place":"LatLng(43.665722, -79.360343)","_id":"05"}]
+    <p><img src='/img/lostrivers/walking-along-the-sculpture.jpg'></p>
+    <div class='caption'>
+    Poets and participants walk along Maria Thereza Alves’s Phantom Pain (2019), carrying handmade paper salmon. Photo by Chiedza Pasipanodya.
+    </div>
+    `,"place":"LatLng(43.665722, -79.360343)","_id":"05"}]
 
 
