@@ -23,6 +23,7 @@
             * {
                 margin:0;
                 padding:0;
+                box-sizing:border-box;
             }
 
             html, body {
@@ -43,7 +44,7 @@
                 font-size:25px;
             }
             p {
-                font-size:20px;
+                font-size:15px;
                 line-height:1.25;
             }
 
@@ -55,12 +56,12 @@
 
             #map {
                 width:100%;
-                height:90vh;
+                height:89vh;
             }
 
             #map-sidebar {
                 font-family:'roboto';
-                height:90vh;
+                height:89vh;
                 overflow:scroll;
             }
 
@@ -111,6 +112,12 @@
                 border-top:1px solid #4b4b00;
 
             }
+
+            #map-sidebar li:first-child {
+                border-top:none;
+            }
+  
+}
 
            
 
