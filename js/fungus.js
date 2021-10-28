@@ -10,9 +10,9 @@ class Fungus {
 
       // values common to all Fungus objects
       this.angleChangeAmt = radians(2);
-      this.speed =          0.25;
+      this.speed =          0.5;
 
-      this.chanceSplit =    0.08;
+      this.chanceSplit =    0.15;
       this.splitAngle =     radians(24);
 
     // passed in from the arguments

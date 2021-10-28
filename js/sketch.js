@@ -19,8 +19,10 @@ let fungi;                 // list of objects
 
 
 function setup() {
+
   createCanvas(windowWidth, windowHeight);
   
+  frameRate(20)
   // draw the background in setup(), since after
   // that every frame draws on top of the previous
   //background(0);
