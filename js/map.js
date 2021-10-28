@@ -23,7 +23,7 @@ L.tileLayer(
         scrollWheelZoom: false
     }).addTo(map);
     
-
+    loadStops(garrisonMap);
 
 $("#garrisonMap").click(function(){
     $(".active").removeClass("active")
@@ -84,7 +84,14 @@ for (var i=1; i<stops.length; i++) {
 
       `
 
-      $("#map-sidebar").append(`<li class="info" id="map-sidebar-item-${stops[i]._id}">${popupContent}</li>`)
+      $(`<li class="info" id="map-sidebar-item-${stops[i]._id}">${popupContent}</li>`)
+            .appendTo("#map-sidebar")
+            .click(function(){
+              $(".info").not(this).removeClass("active");
+              $(this).addClass("active");
+              $("#map-sidebar").scrollTo($(this),200)
+
+            })
 
 
       /* html */
