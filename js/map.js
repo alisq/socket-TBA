@@ -49,8 +49,8 @@ function loadStops(stops) {
   markers.clearLayers();  
   boundsArray = [];
   polyLine = [];
-
-for (var i=0; i<stops.length; i++) {
+  $("#map-sidebar").append(`<li class="info active" id="map-sidebar-item">${stops[0].stop_content}</li>`)
+for (var i=1; i<stops.length; i++) {
   var ll = (stops[i].place.replace("LatLng(","").replace(")","").split(","))
   
   
