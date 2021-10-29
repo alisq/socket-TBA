@@ -322,6 +322,8 @@ $(".book-link").prop("checked", true);
   $(document).on("click","#toggle-view",function(){
     $(".section__main--list").toggleClass("random");
 
+    $(".popout").remove();
+
     if ($(".section__main--list").hasClass("random")) {
         $("#toggle-view").text("View as List")
     } else {

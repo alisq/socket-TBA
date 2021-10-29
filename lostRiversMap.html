@@ -56,29 +56,29 @@
 
             #map {
                 width:100%;
-                height:89vh;
+                height:90vh;
             }
 
             #map-sidebar {
                 font-family:'roboto';
-                height:89vh;
+                height:90vh;
                 overflow-y:scroll;
             }
 
             #map-sidebar::-webkit-scrollbar {
-  display: none;
-}
+                display: none;
+                }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-#map-sidebar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+                /* Hide scrollbar for IE, Edge and Firefox */
+                #map-sidebar {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                }
 
             #map-menu {
                 display:grid;
                 grid-column-gap: 1px;
-                grid-template-columns:repeat(3, 1fr);
+                grid-template-columns:repeat(2, 1fr);
                 border-bottom:1px solid #FFF;
             }
 
@@ -161,7 +161,7 @@
     <body>
         <nav id="map-menu">
             <button class="map-menu-item active" id="garrisonMap">Garrison Creek</button>
-            <button class="map-menu-item">Etobicoke Creek</button>
+            <!-- <button class="map-menu-item">Etobicoke Creek</button> -->
             <button class="map-menu-item" id="lowerDonMap">Don River</button>
         </nav>
         <div id="map-area">

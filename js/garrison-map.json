@@ -1,21 +1,20 @@
 garrisonMap = [
 {"stop_title":"Welcome","stop_content":`
     <p>Garrison Creek flowed for about 11,000 years after the last Ice Age until its burial into the sewer system between 1888 and the 1920s. Through that time to the present the creek has been important to the First Peoples. Garrison Creek entered Lake Ontario just east of Bathurst Street at Old Fort York, the military garrison of the British colony.</p>
-    <p>The hidden creek has gained interest as new initiatives have formed to draw attention to the relationships between “lost” creeks, community planning, and urban design by restoring buried bridges and regenerating the Garrison Creek ravine system. For more about Garrison Creek, see <a href='http://www.lostrivers.ca/GarrisonCreek.htm'>lostrivers.ca/GarrisonCreek.htm</a> <a href='http://www.vanishingpoint.ca/garrison-creek-sewer'>vanishingpoint.ca/garrison-creek-sewer</a></p>
+    <p>The hidden creek has gained interest as new initiatives have formed to draw attention to the relationships between “lost” creeks, community planning, and urban design by restoring buried bridges and regenerating the Garrison Creek ravine system. For more about Garrison Creek, see <a href='http://www.lostrivers.ca/GarrisonCreek.htm'>lostrivers.ca/GarrisonCreek.htm</a> <a href='http://www.vanishingpoint.ca/garrison-creek-sewer'>vanishingpoint.ca/garrison-creek-sewer</a>.</p>
     <p>Starting at Christie Station, the Night Walk with the Lost Rivers and Rivers Rising in October of 2019 traced hidden histories of the Garrison Creek, pausing along the way. <Br /><br />—Helen Mills</p>
     `,"place":"LatLng(43.664039, -79.418855)","_id":"00"},
 {"stop_title":"Bickford Centre Garden","stop_content":`
-    <p>- We gathered around the Moccasin Identifier Circle for introductions and Land Acknowledgement</p>
+    <p>- We gathered around the Moccasin Identifier Circle for introductions and Land Acknowledgement.</p>
     <p>- Then on to the Miinikaan (Seed) Indigenous Teaching Garden and mural honouring Elder Pauline Shirt with some of her family, created by Johl Whiteduck and partner Lara Lucretia.</p>
-    <p>- Here, Rivers Rising Ambassador Nolan Scharper spoke about: “...the Hunter’s Moon, in particular how the light of this full moon illuminates the ground clearly since the leaves have fallen from the trees. The moon asks us to cast our eyes downwards into the, up until now, opaque and occluded depths of our world...At this time of year, following on the heels of the autumnal equinox, compels us to plumb our own depths. Just as the Hunter's Moon and hidden river invite us to peer under the surface of our city, they also invite us to crack open our own carapaces, and deal honestly with the rawness of what lies beneath.”</p>
+    <p>- Here, Rivers Rising Ambassador Nolan Scharper spoke about: “...the Hunter’s Moon, in particular how the light of this full moon illuminates the ground clearly since the leaves have fallen from the trees. The moon asks us to cast our eyes downwards into the, up until now, opaque and occluded depths of our world... At this time of year, following on the heels of the autumnal equinox, compels us to plumb our own depths. Just as the Hunter's Moon and hidden river invite us to peer under the surface of our city, they also invite us to crack open our own carapaces, and deal honestly with the rawness of what lies beneath.”</p>
     <img src='img/lostrivers/garrison-creek-garden.jpg' />
     <div class='caption'>Nolan Scharper shares with the group of walkers at the Miinikaan (Seed) Indigenous Teaching Garden, in front of the mural created by Johl Whiteduck and partner Lara Lucretia (2019). Photo by Clare Butcher.</div>
     `,"place":"LatLng(43.663113, -79.420021)","_id":"01"},
 {"stop_title":"Underpass 777 Bloor St West","stop_content":`
-    <p>We then walked through an extravaganza of mural art by Indigenous Red Nation in the Bickford Park underpass featuring Les Harper’s The Two Worlds, Philip Cote’s The White Buffalo, as well as works by Angela Aula, Danielle Hyde, Ren Lonechild, Keitha Keeshig Tobias, Johl Whiteduck with partner Lara Lucretia, and many collaborators.</p>
-    <p>To learn more, visit: <a href='https://www.facebook.com/nishdishmarketeria/posts/last-saturdays-indigenous-mural-reveal-at-bickford-centre-here-is-just-a-glimpse/657340188074913/'>facebook.com/nishdishmarketeria/posts/last-saturdays-indigenous-mural-reveal-at-bickford-centre-here-is-just-a-glimpse/657340188074913/</a></p>
-    <p>- Here we heard a talk by RR Ambassador and Hip Hop artist Ion Mic: \n“On the walk we began by descending into the depths of this hidden world, by tracing the path of the underground river. Murals illuminate our path. Ion stopped at one of these murals which featured the moon and discussed the link between the moon and bodies of water. He talked about how the light of the moon is an opportunity to focus on the rivers within our bodies, the ebb and flow of who we are.”</p>
-    <p>— Nolan Sharper</p>
+    <p>We then walked through an extravaganza of mural art by Indigenous Red Nation in the Bickford Park underpass featuring Les Harper’s <em>The Two Worlds</em>, Philip Cote’s <em>The White Buffalo</em>, as well as works by Angela Aula, Danielle Hyde, Ren Lonechild, Keitha Keeshig Tobias, Johl Whiteduck with partner Lara Lucretia, and many collaborators.</p>
+    <p>To learn more, visit: <a href='https://www.facebook.com/nishdishmarketeria/posts/last-saturdays-indigenous-mural-reveal-at-bickford-centre-here-is-just-a-glimpse/657340188074913/'>facebook.com/nishdishmarketeria/posts/last-saturdays-indigenous-mural-reveal-at-bickford-centre-here-is-just-a-glimpse/657340188074913/</a>.</p>
+    <p>- Here we heard a talk by RR Ambassador and hip-hop artist Ion Mic: “On the walk we began by descending into the depths of this hidden world, by tracing the path of the underground river. Murals illuminate our path. Ion stopped at one of these murals which featured the moon and discussed the link between the moon and bodies of water. He talked about how the light of the moon is an opportunity to focus on the rivers within our bodies, the ebb and flow of who we are.” (Nolan Sharper)</p>    
     <img src='img/lostrivers/garrison-creek-murals.jpg' />
     <div class='caption'>Group walks alongside mural by Les Harper with flashlights and stops to listen to Ion Mic (2019). Photo by Clare Butcher.</div>
     `,"place":"LatLng(43.662439, -79.419696)","_id":"02"},
@@ -24,19 +23,18 @@ garrisonMap = [
     <p>“Hi, everyone, my name is Setayesh. And before I start, I want you all to listen to the river that is right beneath our feet. I spent a lot of time doing this. </p>
     <p>[Sound of water rushing below sewer grate.]</p>
     <p>I am from Iran, and growing up I witnessed the loss of a river in my city Isfahan many, many times due to water extraction and lack of knowledge about land and water. When I came here walking into the ravines, the city’s emotional geography, as Robert Fulford has described, really reminded me of my childhood and memories around water. When I wanted to do my thesis, I had no idea about the lost rivers that you have here. But during my research about Toronto’s hydrological system, I recognized that, or I realized that, they exist and they're just beneath their feet. And right away, I knew that I wanted to do something about it. From the history I learnt that we always destroy or bury our mistakes. And of course, that's a great solution. But it's temporary. I really wanted to not do that and really use something that we have, so slowly my thesis took form. I designed a system that is using these beautiful Victorian tunnels that cover the Garrison Creek to use this linear space beneath our feet to filter the water along the way, rather than having all this water going to a big tank and that overflow and sewage going into the lake. I wanted to prevent that and create this system that collects data of our water, our soil, and our land and keep them for future generations and make visible the invisible to help us understand the unknown and not just be afraid of it and bury it. I call my project Veins because of this beautiful pattern that these rivers have in our city; they are veins of our city, and without them, we can't really live in the city. Thank you.”</p>
+    <img src='img/lostrivers/Garrison Creek_Setayesh listening_PPL.jpg' />
+    <div class='caption'>Setayesh Babaei amplifying the sound of water under the sewer grate at Bickford Park (2019). Photo by Clare Butcher.</div>
     `,"place":"LatLng(43.661383, -79.41916)","_id":"03"},
 {"stop_title":"Along the park","stop_content":`
     <p>We then formed a human river of light across the park using mobile phone flashlights as we listened to poems by Nicholas Power and responses from those inspired to share:</p>
     
     
+    <audio controls src='audio/Nicholas Power_unnamed rivers.m4a'></audio>
+    <div class='caption'>Listen to Nicholas Power reading “unnamed rivers” (2015).</div>
 
 
-
-    <audio controls src='audio/Nicholas Power_unburied river.m4a'></audio>
-    <div class='caption'>Listen to Nicholas Power reading “unburied river” (2012–15).</div>
-
-
-    <p>Nicholas Power, “<em>unnamed rivers</em>” (2015)</p>
+    <p>Nicholas Power, “unnamed rivers” (2015)</p>
  <p>
 “we walk beside unnamed rivers<br />
 where chemicals leak from dumped paint<br />
@@ -74,9 +72,10 @@ speeches, and volunteers
 to guard the rubbish heap”
 </p>
 
-    <audio controls src='audio/Nicholas Power_unnamed rivers.m4a'></audio>
-    <div class='caption'>Listen to Nicholas Power reading “unnamed rivers” (2012–15).</div>
-    <p>Nicholas Power, Excerpt from Moonlight Walk  (2019)</p>
+    <audio controls src='audio/Nicholas Power_unburied river.m4a'></audio>
+    <div class='caption'>Listen to Nicholas Power reading unburied river” (2012–15).</div>
+
+    <p>Nicholas Power, “unburied river”  (2012–15)</p>
     <p style='text-align:center'>
     “what the thunder speaks &nbsp;&nbsp;&nbsp; we choose not to hear &nbsp;&nbsp;&nbsp; what we fail <br />
 to comprehend &nbsp;&nbsp;&nbsp;   will rend us &nbsp;&nbsp;&nbsp;   orphaned by fixed destinies <br />
@@ -89,8 +88,7 @@ before the dew dries &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; or mist dissipates &n
 concrete constructed channels &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; finds its own level”
 
     </p>
-    <img src='img/lostrivers/Garrison Creek_Setayesh listening_PPL.jpg' />
-    <div class='caption'>Setayesh Babaei amplifying the sound of water under the sewer grate at Bickford Park (2019). Photo by Clare Butcher.</div>
+    
     `,"place":"LatLng(43.660716, -79.418237)","_id":"04"},
 {"stop_title":"Eggleton Park","stop_content":`
     <p>At Eggleton Park – again on flat land – we discussed the filling of the ravine with garbage, and the colonial attitudes to rivers and real estate that informed this approach to planning.</p>

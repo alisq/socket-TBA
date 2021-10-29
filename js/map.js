@@ -11,7 +11,8 @@ let allStopsGroup = L.layerGroup();
 let map = L.map('map', {
     center: [43.6514794,-79.4860513],
     zoom: 13,
-    maxZoom: 54
+    maxZoom: 54,
+    scrollWheelZoom: false
   });
   
 L.tileLayer(
@@ -120,7 +121,7 @@ let firstpolyline = new L.Polyline(polyLine, {
   color: '#CC9B2C',
   weight: 3,
   opacity: 0.95,
-  smoothFactor: 1
+  smoothFactor: 0
 
   });
 
