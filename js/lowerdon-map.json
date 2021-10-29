@@ -162,8 +162,8 @@ lowerDonMap = [
     </div>
     
     `,"place":"LatLng(43.666439, -79.359404)","_id":"04"},
-{"stop_title":"tracing the Don’s ancient path","stop_content":`<p>
-    As a final act, we walked the sculpture, tracing the Don’s ancient path with our bodies and a run of paper salmon. 
+{"stop_title":"Be the river","stop_content":`<p>
+    —As a final act, we walked the sculpture, tracing the Don’s ancient path with our bodies and a run of paper salmon. 
     </p>
 
     <audio controls src='audio/Maureen S Harris_Don River_Be the River.m4a'></audio>
@@ -188,7 +188,7 @@ lowerDonMap = [
     </p>
     <p><img src='img/lostrivers/walking-along-the-sculpture.jpg'></p>
     <div class='caption'>
-    Poets and participants walk along Maria Thereza Alves’s Phantom Pain (2019), carrying handmade paper salmon. Photo by Chiedza Pasipanodya.
+    Poets and participants walk along Maria Thereza Alves’s <em>Phantom Pain</em> (2019), carrying handmade paper salmon. Photo by Chiedza Pasipanodya.
     </div>
     `,"place":"LatLng(43.665722, -79.360343)","_id":"05"}]
 
