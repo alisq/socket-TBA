@@ -16,9 +16,9 @@ lowerDonMap = [
     {"stop_title":"St Matthews Clubhouse","stop_content":`
         
         
-        <p>We gathered at St Matthews Clubhouse on Broadview Avenue for a welcome and Land Acknowledgement: “So we're actually going to start with the land acknowledgments, and I'd like to know who in this group knows what the land acknowledgment is. Almost everybody whoa, whoa,... we've come a way. Yeah! Honestly, I was in a group the other week, literally no one had ever heard of it. So, this is refreshing. We acknowledge Toronto as a gathering place for many people of Turtle Island who recognize the long history of First Nations people in Ontario and show respect today to the ones that return the city and back the Mississauga's of the credits and the Chippewa—also transplants of trying to get rid of that big echo of what's going on. The territory was a subject with a dish with one spoon wampum belt covenant's agreement between the Iroquois Confederacy and the Ojibwe and allied nations to peaceably care for and share the resources around the Great Lakes. This territory is also covered by the Upper Canada treaties.</p>
-    <p>Who's heard of the dish with one spoon? Wow. What I usually say here, especially if there are lots of immigrants in the group, which would include me, is that when you become a Canadian citizen, it's important to know that you've actually signed on to the treaties and that we all become treaty people as we become Canadian citizens and sign on to the duty of caring for and sharing the land. Today, Toronto is home to many indigenous people from across Turtle Island or North America, and we are grateful to be here. Chi-miigwech.” (Helen Mills)</p>
-    <p><insert Helen WelcomeHelen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya.</p>
+        <p>—We gathered at St Matthews Clubhouse on Broadview Avenue for a welcome and Land Acknowledgement: “So we're actually going to start with the land acknowledgments, and I'd like to know who in this group knows what the land acknowledgment is. Almost everybody whoa, whoa,... we've come a way. Yeah! Honestly, I was in a group the other week, literally no one had ever heard of it. So, this is refreshing. We acknowledge Toronto as a gathering place for many people of Turtle Island who recognize the long history of First Nations people in Ontario and show respect today to the ones that return the city and back the Mississauga's of the credits and the Chippewa—also transplants of trying to get rid of that big echo of what's going on. The territory was a subject with a dish with one spoon wampum belt covenant's agreement between the Iroquois Confederacy and the Ojibwe and allied nations to peaceably care for and share the resources around the Great Lakes. This territory is also covered by the Upper Canada treaties.</p>
+    <p>—Who's heard of the dish with one spoon? Wow. What I usually say here, especially if there are lots of immigrants in the group, which would include me, is that when you become a Canadian citizen, it's important to know that you've actually signed on to the treaties and that we all become treaty people as we become Canadian citizens and sign on to the duty of caring for and sharing the land. Today, Toronto is home to many indigenous people from across Turtle Island or North America, and we are grateful to be here. Chi-miigwech.” (Helen Mills)</p>
+    
     <p><img src='img/lostrivers/helen-welcome.jpg'></p>
     <div class='caption'>Helen Mills welcomes participants outside St Matthews Clubhouse at the edge of Riverdale Park West (2019). Photo by Chiedza Pasipanodya</div>`,"place":"LatLng(43.667692, -79.35378)","_id":"00"},
 {"stop_title":"Riverdale Park East","stop_content":`<p>Moving down the hill into Riverdale Park East, we heard from the River Poets.</p>
@@ -103,8 +103,8 @@ lowerDonMap = [
     <p>
     Note: This poem was inspired by an archival photo (1908) of three women river-fishing (see City of Toronto Archives, Fond 1244, Item 167A). The narrator (fictional) is a Toronto public health nurse in the early 1900s; she appears in several other poems in my Don River series. 
     </p>`,"place":"LatLng(43.667825, -79.356566)","_id":"02"},
-{"stop_title":"Crossing the bridge","stop_content":`<p>Crossing the bridge over the Don River towards Riverdale Park West, we observed the straightened path of the waterway.
-    </p>
+{"stop_title":"Crossing the bridge","stop_content":`
+    <p>—Crossing the bridge over the Don River towards Riverdale Park West, we observed the straightened path of the waterway.</p>
 
     <audio controls src='audio/Anita Lahey_Don River_Crossingsrexcerpt.mp3'></audio>
 
@@ -153,12 +153,12 @@ lowerDonMap = [
     
     </p>`,"place":"LatLng(43.667575, -79.357958)","_id":"03"},
 {"stop_title":"At Riverdale Park West","stop_content":`<p>
-    At Riverdale Park West, we reached Maria Thereza Alves’s temporary public sculpture Phantom Pain (2019) which traced the course of the Don River’s natural flow.
+    —At Riverdale Park West, we reached Maria Thereza Alves’s temporary public sculpture <em>Phantom Pain</em> (2019) which traced the course of the Don River’s natural flow.
     </p>
     
     <p><img src='img/lostrivers/TBA_MariaTherezaAlves_RiverdaleParkWest_02.jpg'></p>
     <div class='caption'>
-    Maria Thereza Alves, <em>Phantom Pain</em>, 2019, public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the <a href='https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves' target='_blank'>Short Format podcast series</a>. 
+    Maria Thereza Alves, <em>Phantom Pain</em> (2019), public sculpture at Riverdale Park West as part of the Toronto Biennial of Art (2019). Photo: Toni Hafkenscheid. Courtesy Toronto Biennial of Art. To learn more about the project, you can tune into Maria Thereza Alves’s episode in the <a href='https://toronto-biennial-of-art-podcast.simplecast.com/episodes/short-format-maria-thereza-alves' target='_blank'>Short Format podcast series</a>. 
     </div>
     
     `,"place":"LatLng(43.666439, -79.359404)","_id":"04"},
