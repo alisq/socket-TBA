@@ -371,9 +371,9 @@ $(document).on("click",".see-footnote",function(e){
 
 
 
-$(document).on("click",".footnote",function(e){
+$(document).on("click",".footnote-label",function(e){
   e.preventDefault();
-  fn = "#"+$(this).attr("id").replace("footnote","footnoteref");
+  fn = $(this).attr("href");
   $(".popout").scrollTo(fn, 1200)
   
 })
