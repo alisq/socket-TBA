@@ -39,14 +39,11 @@ let pages = [];
   
 
 //CHECK FOR COOKIE FOR PREAMBLE.
- if (getCookie("preambleViewed") !=  "true") {  
-      setCookie("preambleViewed","true",1);
+ if (getCookie("preambleViewedOneDay") !=  "true") {  
+      setCookie("preambleViewedOneDay","true",1);
       $(".preamble--text").html(j[1].body)
       $(".preamble--cover, .preamble--text").fadeIn(200)
 }
-
-  //  document.cookie = "preambleViewed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  // console.log("it's there: "+getCookie("preambleViewed"));
 
   pages = [...j]
   //console.log(pages)
