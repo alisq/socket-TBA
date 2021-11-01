@@ -40,7 +40,7 @@ let pages = [];
 
 //CHECK FOR COOKIE FOR PREAMBLE.
  if (getCookie("preambleViewed") !=  "true") {  
-      setCookie("preambleViewed","true",7);
+      setCookie("preambleViewed","true",1);
       $(".preamble--text").html(j[1].body)
       $(".preamble--cover, .preamble--text").fadeIn(200)
 }
