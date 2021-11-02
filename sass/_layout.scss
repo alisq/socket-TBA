@@ -345,6 +345,8 @@ audio::-webkit-media-controls-volume-slider {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     text-align:center;
+    max-width:1000px;
+    margin:auto;
 
     & img { display:block; margin:auto;}
 

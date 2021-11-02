@@ -220,6 +220,9 @@ button:active {
   font-size: 2.75rem !important;
   line-height: 4rem; }
 
+#popout__71 h4 {
+  animation: none; }
+
 @media (max-width: 1050px) {
   h1 {
     font-size: 1.75em; }
@@ -544,7 +547,9 @@ audio {
 #sponsor-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  text-align: center; }
+  text-align: center;
+  max-width: 1000px;
+  margin: auto; }
   #sponsor-grid img {
     display: block;
     margin: auto; }
