@@ -182,10 +182,11 @@
         font-weight: 100;
         cursor:pointer;
         z-index:99;
+        color:$yellow;
 
         &:hover,
         &:active {
-            color:$yellow!important;
+            color:$green!important;
         }
     }
 }
@@ -250,6 +251,8 @@
         font-weight: 100;
         cursor:pointer;
         z-index:99;
+        color:$yellow;
+        
     }
 
     }
@@ -393,6 +396,15 @@ audio::-webkit-media-controls-volume-slider {
     }
 
 
+    .preamble--cover {
+    
+        & .popout__close {
+            right:50%;
+            color:$yellow;
+            transform:translateX(50%)
+        
+    }
+}
 .editorial {
     
     grid-template-columns:1fr;

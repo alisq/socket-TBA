@@ -448,9 +448,10 @@ button:active {
     font-size: 10rem;
     font-weight: 100;
     cursor: pointer;
-    z-index: 99; }
+    z-index: 99;
+    color: #CC9B2C; }
     .section__book-menu .popout__close:hover, .section__book-menu .popout__close:active {
-      color: #CC9B2C !important; }
+      color: #2B2B00 !important; }
 
 .editorial {
   display: grid;
@@ -495,7 +496,8 @@ button:active {
     font-size: 10rem;
     font-weight: 100;
     cursor: pointer;
-    z-index: 99; }
+    z-index: 99;
+    color: #CC9B2C; }
 
 .preamble--text {
   position: absolute;
@@ -583,6 +585,10 @@ audio {
       display: none; }
     .popout__interior {
       padding: 0 1rem; }
+  .preamble--cover .popout__close {
+    right: 50%;
+    color: #CC9B2C;
+    transform: translateX(50%); }
   .editorial {
     grid-template-columns: 1fr; }
     .editorial--illustration {
