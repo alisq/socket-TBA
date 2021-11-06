@@ -361,8 +361,11 @@ $(document).on("click",".see-footnote",function(e){
   e.preventDefault();
   fn = "#"+$(this).attr("id").replace("ref","");
   
+
+  
   
   $(".popout").scrollTo(fn, 1200)
+  
   
 })
 

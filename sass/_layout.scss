@@ -396,15 +396,31 @@ audio::-webkit-media-controls-volume-slider {
     }
 
 
-    .preamble--cover {
+    .preamble {
     
-        & .popout__close {
-            right:50%;
-            color:$yellow;
-            transform:translateX(50%)
-        
+    
+        &--cover {
+
+            position:absolute;
+    
+            & .popout__close {
+                // right:50%;
+                color:$yellow;
+                // transform:translateX(50%)
+            
+                }
+        }
+
+
+        &--text {
+
+            top:140px; left:0;
+            transform:translate(0,0);
+            padding:1em;
+        }
     }
-}
+
+
 .editorial {
     
     grid-template-columns:1fr;
@@ -433,6 +449,7 @@ audio::-webkit-media-controls-volume-slider {
     .footnotes {
         margin-left: 14%;
     }
+    
 
 
     &.random {

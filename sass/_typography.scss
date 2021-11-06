@@ -216,6 +216,14 @@ h2, h3, h4, p {
   padding-top: 1em;
   margin-top: 1em;
 
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  hyphens: auto;
 }
 
 .footnote-label {
@@ -324,5 +332,9 @@ button:active {
 
   .author {
     font-size: 0.7em;
+}
+
+.footnotes {
+  margin-left:16%;
 }
 }

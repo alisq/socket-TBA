@@ -73,7 +73,7 @@
             position:relative;
             z-index:9999;
             margin:1em;
-            
+            left: calc(100vw - 80px);
             width:30px;
             height:30px;
             background: rgb(255,255,255);
@@ -82,15 +82,16 @@
         }
 
         &__menu.active::before {
-            margin: 1em;
             width: 30px;
             height: 30px;
             content: "\d7";
             background: none;
             color: #FFF;
             font-size: 3em;
+            
+            margin: 2.5rem;
             position: relative;
-            left: -60px;
+            left: calc(100vw - 80px);
         }
 
         &__menu.active:hover::before {
@@ -117,6 +118,8 @@
             border-bottom:1px solid rgba($white,0.6);
             position:relative;
             z-index:11;
+            font-size: 1.5em;
+            line-height: 1.3;
         }
     }
 }
