@@ -31,7 +31,7 @@
     }
     &--list {
         max-width: 1000px;
-        margin: 20px auto;
+        margin: 2em auto;
     }
     &--list.random {
         max-width:100%;
@@ -430,7 +430,8 @@ audio::-webkit-media-controls-volume-slider {
         height: 50vw;
         position:static;
         transform:none;
-} }
+    } 
+}
 
 
     .section__main {

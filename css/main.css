@@ -375,7 +375,7 @@ button:active {
       color: #CC9B2C; }
   .section__main--list {
     max-width: 1000px;
-    margin: 20px auto; }
+    margin: 2em auto; }
   .section__main--list.random {
     max-width: 100%;
     list-style-type: none;
