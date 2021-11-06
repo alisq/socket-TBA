@@ -67,9 +67,6 @@ class Article {
 
     get displayFull() {
 
-        console.log(this.audio)
-
-
         let title =  this.title+" — "+this.artists;
         $("title").text(title)
         history.pushState('',title, window.location.pathname+'#text-'+this.nid);

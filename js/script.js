@@ -130,7 +130,7 @@ $("input[type=checkbox]").change(function(){
 //UPON PAGE LOAD CLICK ON APPROPRIATE LINK BASED ON URL HASH
   if (window.location.hash != '') {
     l = "#link-"+window.location.hash.split("-")[1];
-    console.log(l)
+    // console.log(l)
     setTimeout(function(){
       $(l).click();
     },200)
@@ -364,7 +364,7 @@ $(document).on("click",".see-footnote",function(e){
 
   
   
-  $(".popout").scrollTo(fn, 1200)
+  setTimeout(function(){$(".popout").scrollTo(fn, 1200)},100);
   
   
 })
