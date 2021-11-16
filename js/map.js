@@ -35,6 +35,15 @@ $("#garrisonMap").click(function(){
 })
 
 
+$("#etobicokeMap").click(function(){
+  $(".active").removeClass("active")
+  $(this).addClass("active")
+   //map.removeLayer(markers);
+   loadStops(etobicokeMap);
+  
+})
+
+
 $("#lowerDonMap").click(function(){
   $(".active").removeClass("active")
   $(this).addClass("active")
